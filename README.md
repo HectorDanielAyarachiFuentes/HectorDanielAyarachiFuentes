@@ -6,7 +6,7 @@
 - 👀 Estoy interesado en la programación, la tecnología y la innovación.
 - 🌱 Actualmente estoy aprendiendo nuevas tecnologías y mejorando mis habilidades de desarrollo.
 - 💞️ Estoy buscando colaborar en proyectos interesantes y desafiantes.
-- 📫 Puedes contactarme a través de mi correo electrónico: tu-email@example.com
+- 📫 Puedes contactarme a través de mi correo electrónico: mp4o@hotmail.com
 
 ## Sobre mi GitHub
 - 🔭 Aquí encontrarás una variedad de proyectos, desde aplicaciones web hasta juegos y más.
