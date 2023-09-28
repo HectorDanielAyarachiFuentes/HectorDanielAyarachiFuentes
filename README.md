@@ -1,10 +1,16 @@
-- 👋 Hi, I’m @HectorDanielAyarachiFuentes
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+# Hola, soy @HectorDanielAyarachiFuentes 👋
 
-<!---
-HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+¡Bienvenido a mi perfil de GitHub!
+
+## Sobre Mí
+- 👀 Estoy interesado en la programación, la tecnología y la innovación.
+- 🌱 Actualmente estoy aprendiendo nuevas tecnologías y mejorando mis habilidades de desarrollo.
+- 💞️ Estoy buscando colaborar en proyectos interesantes y desafiantes.
+- 📫 Puedes contactarme a través de mi correo electrónico: tu-email@example.com
+
+## Sobre mi GitHub
+- 🔭 Aquí encontrarás una variedad de proyectos, desde aplicaciones web hasta juegos y más.
+- 🌐 Explora mis repositorios y descubre lo que he estado construyendo.
+- 🤝 ¡Siéntete libre de colaborar en mis proyectos o iniciar una conversación!
+
+¡Gracias por visitar mi perfil! 😊
