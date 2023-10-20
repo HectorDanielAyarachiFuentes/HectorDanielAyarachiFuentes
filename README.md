@@ -15,6 +15,6 @@
 
 ¡Gracias por visitar mi perfil! 😊
 
-![Dulce Reina](391626291_7067940753297285_6954890977725599637_n.jpg)
+![Dulce Reina](DULCE.jpg)
 
 
