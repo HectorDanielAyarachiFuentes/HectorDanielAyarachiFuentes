@@ -1,6 +1,7 @@
 # Hola, soy @HectorDanielAyarachiFuentes 👋
 
 ¡Bienvenido a mi perfil de GitHub!
+
 ![Dulce Reina](dulcesacandolengua.png)
 
 ## Sobre Mí
@@ -8,6 +9,7 @@
 - 🌱 Actualmente estoy aprendiendo nuevas tecnologías y mejorando mis habilidades de desarrollo.
 - 💞️ Estoy buscando colaborar en proyectos interesantes y desafiantes.
 - 📫 Puedes contactarme a través de mi correo electrónico: [mp4o@hotmail.com](mailto:mp4o@hotmail.com)
+
 
 ![Dulce Reina](hermosa.png)
 
