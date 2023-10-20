@@ -1,7 +1,7 @@
 # Hola, soy @HectorDanielAyarachiFuentes 👋
 
 ¡Bienvenido a mi perfil de GitHub!
-![Dulce Reina](DULCEALEGRE.jpg)
+![Dulce Reina](dulcesacandolengua.png)
 
 ## Sobre Mí
 - 👀 Estoy interesado en la programación, la tecnología y la innovación.
