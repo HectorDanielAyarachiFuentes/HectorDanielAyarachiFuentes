@@ -41,7 +41,7 @@
 </section>
 
 
-  <h3 style="color: yellow;font-size: 20px;"> ✅Contactos✅<h3>
+  <h3 style="color: yellow;font-size: 20px;text-align: center;"> ✅Contactos✅<h3>
 
 
 </section>
