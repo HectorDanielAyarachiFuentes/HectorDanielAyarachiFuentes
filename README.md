@@ -11,7 +11,8 @@
 - 📫 Puedes contactarme a través de mi correo electrónico: [mp4o@hotmail.com](mailto:mp4o@hotmail.com)
 
 
-![Dulce Reina](hermosa.png)
+<img src="hermosa.png" alt="Dulce Reina" style="width:300px;">
+
 
 
 ## Sobre mi GitHub
@@ -21,7 +22,8 @@
 
 ¡Gracias por visitar mi perfil! 😊
 
-![Dulce Reina](DULCE.jpg)
+
+<img src="DULCE.jpg" alt="Dulce Reina" style="width:300px;"/>
 
 
  <h3> 🖥️Programando🖥️ </h3>  
