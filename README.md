@@ -26,7 +26,9 @@
 <img src="DULCE.jpg" alt="Dulce Reina" style="width:300px;"/>
 
 
- <h3> 🖥️Programando🖥️ </h3>  
+
+   <h3 style="color: yellow;font-size: 20px;"> 🖥️Programando🖥️<h3>
+
 </section>
 <section>
   <img align="center" alt="JAVA" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
@@ -38,7 +40,10 @@
   <img align="center" alt="VUEJS" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg">
 </section>
 
- <h3> ✅Contactos✅ </h3>
+
+  <h3 style="color: yellow;font-size: 20px;"> ✅Contactos✅<h3>
+
+
 </section>
 <section> 
   <a href="https://www.youtube.com/channel/UC5w8FxNulogaoKABY0Yymtw" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
