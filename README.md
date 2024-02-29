@@ -2,7 +2,7 @@
 
 ¡Bienvenido a mi perfil de GitHub!
 
-![Dulce Reina](dulcesacandolengua.png)
+<img src="dulcesacandolengua.png" alt="Dulce Reina" style="width:300px;"/>
 
 ## Sobre Mí
 - 👀 Estoy interesado en la programación, la tecnología y la innovación.
