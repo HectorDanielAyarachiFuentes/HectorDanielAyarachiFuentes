@@ -5,17 +5,20 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    name: Generate 3D Contributions
     steps:
       - uses: actions/checkout@v3
-      # Usamos una versión específica y estable, no @main
-      - uses: yoshi389111/github-profile-3d-contrib@2c17d6f5fa26ca542f70e39e9425ea3cd0a4237f 
-        with:
+      - uses: ashutosh00710/github-profile-3d-contrib@main # <--- ¡ACCIÓN NUEVA!
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add -A
+          git commit -m "Updated 3D contributions graph"
+          git push
