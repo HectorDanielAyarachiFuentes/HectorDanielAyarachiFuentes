@@ -2,23 +2,24 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
+    # Se ejecuta a las 00:00 UTC todos los días
     - cron: '0 0 * * *'
+  # Permite ejecutarlo manualmente
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Generate 3D Contributions
+    name: generate-github-profile-3d-contrib
+    
+    # IMPORTANTE: Se necesita este permiso para escribir en el otro repositorio
+    permissions:
+      contents: write 
+      
     steps:
       - uses: actions/checkout@v3
-      - uses: ashutosh00710/github-profile-3d-contrib@main # <--- ¡ACCIÓN NUEVA!
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-      - name: Commit & Push
-        run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          git add -A
-          git commit -m "Updated 3D contributions graph"
-          git push
+      - uses: yoshi389111/github-profile-3d-contrib@main
+        with:
+          # Parámetros en MINÚSCULAS, como los requiere esta acción
+          token: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ github.repository_owner }}
