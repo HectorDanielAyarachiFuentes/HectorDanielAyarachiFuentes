@@ -83,17 +83,10 @@
 
 <div align="center">
   <!-- El gráfico 3D se mostrará aquí -->
-  <img src="profile-3d-contrib.svg" alt="Mi Gráfico de Contribuciones en 3D"/>
-  <br> <!-- Una línea de espacio -->
-  <br> <!-- Otra línea de espacio para simular un poco el margin-top -->
+  ![Rojo](https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-red.svg)
+
   <img src="https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Vistas%20del%20Perfil&color=0e75b6&style=flat" alt="contador de visitas"/>
 </div>
 
 
-### 🧱 Mis contribuciones en 3D
 
-![Contribuciones 3D](./profile-3d-contrib/profile-green.svg)
-
-
-
-![Contribuciones 3D](https://raw.githubusercontent.com/<TU-USUARIO>/<TU-REPO>/main/profile-3d-contrib/profile-green.svg)
