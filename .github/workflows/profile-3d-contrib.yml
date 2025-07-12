@@ -2,17 +2,52 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Corre diariamente a la medianoche
+    - cron: '0 0 * * *'  # Todos los días a la medianoche
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
+    
+    # PERMISO CRUCIAL para que la acción pueda escribir en tu repositorio
+    permissions:
+      contents: write 
+
     steps:
       - uses: actions/checkout@v3
-      - name: Generate 3D Contributions
-        uses: ashutosh1919/github-readme-3d-contrib@v2.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # O la versión que prefieras (ej. '18' o '20')
+
+      - name: Instalar dependencias necesarias (para renderizado gráfico)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libglu1-mesa xvfb
+
+      - name: Clonar el generador de contribuciones 3D
+        run: git clone https://github.com/ashutosh1919/github-readme-3d-contrib.git
+
+      - name: Ejecutar el generador y mover el archivo
+        run: |
+          cd github-readme-3d-contrib
+          npm install
+          # Ejecutar el script y asegurarse de que la imagen se genere en la raíz del repo clonado
+          USERNAME=${{ github.repository_owner }} GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npm start
+          
+          # Mover la imagen generada a la raíz de tu repositorio principal
+          # (Asegúrate que el nombre del archivo de salida sea 'profile-3d-contrib.svg')
+          mv profile-3d-contrib.svg ../profile-3d-contrib.svg
+          
+          # Volver a la raíz de tu repositorio principal para el commit
+          cd .. 
+
+      - name: Configurar Git y Subir la Imagen
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add profile-3d-contrib.svg
+          git commit -m "Actualizar gráfico 3D de contribuciones" || echo "No hay cambios para commitear."
+          git push
