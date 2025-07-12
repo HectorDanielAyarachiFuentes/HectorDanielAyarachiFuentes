@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
     
-    # PERMISO CRUCIAL para que la acción pueda escribir en tu repositorio
     permissions:
       contents: write 
 
@@ -28,17 +27,16 @@ jobs:
           sudo apt-get install -y libglu1-mesa xvfb
 
       - name: Clonar el generador de contribuciones 3D
-        run: git clone https://github.com/ashutosh1919/github-readme-3d-contrib.git
+        # Aquí forzamos la autenticación con el token
+        run: git clone https://x-oauth-basic:${{ secrets.GITHUB_TOKEN }}@github.com/ashutosh1919/github-readme-3d-contrib.git
 
       - name: Ejecutar el generador y mover el archivo
         run: |
           cd github-readme-3d-contrib
           npm install
-          # Ejecutar el script y asegurarse de que la imagen se genere en la raíz del repo clonado
           USERNAME=${{ github.repository_owner }} GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npm start
           
           # Mover la imagen generada a la raíz de tu repositorio principal
-          # (Asegúrate que el nombre del archivo de salida sea 'profile-3d-contrib.svg')
           mv profile-3d-contrib.svg ../profile-3d-contrib.svg
           
           # Volver a la raíz de tu repositorio principal para el commit
