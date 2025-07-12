@@ -2,7 +2,7 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # Corre todos los días a medianoche
   workflow_dispatch:
 
 jobs:
@@ -24,12 +24,15 @@ jobs:
       - name: Instalar dependencias necesarias (para renderizado gráfico)
         run: |
           sudo apt-get update
-          sudo apt-get install -y libglu1-mesa xvfb
+          sudo apt-get install -y libglu1-mesa xvfb unzip curl
 
-      - name: Clonar el generador de contribuciones 3D
-        run: git clone https://github.com/ashutosh1919/github-contribution-3d.git
+      - name: Descargar y descomprimir el generador de contribuciones 3D
+        run: |
+          curl -L https://github.com/ashutosh1919/github-contribution-3d/archive/refs/heads/master.zip -o gen.zip
+          unzip gen.zip
+          mv github-contribution-3d-master github-contribution-3d
 
-      - name: Ejecutar el generador y mover el archivo
+      - name: Ejecutar el generador y mover el archivo generado
         run: |
           cd github-contribution-3d
           npm install
@@ -37,10 +40,11 @@ jobs:
           mv profile-3d-contrib.svg ../profile-3d-contrib.svg
           cd ..
 
-      - name: Configurar Git y Subir la Imagen
+      - name: Configurar Git y subir la imagen al repositorio
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           git add profile-3d-contrib.svg
           git commit -m "Actualizar gráfico 3D de contribuciones" || echo "No hay cambios para commitear."
           git push
+
