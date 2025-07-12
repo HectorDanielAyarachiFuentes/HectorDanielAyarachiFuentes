@@ -5,8 +5,8 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-permissions:      # <--- AÑADE ESTA LÍNEA
-  contents: write # <--- Y ESTA LÍNEA
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -15,6 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: yoshi389111/github-profile-3d-contrib@main
-        env:
+        with: # <-- ¡AQUÍ ESTÁ LA CORRECCIÓN! Se cambia 'env:' por 'with:'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
