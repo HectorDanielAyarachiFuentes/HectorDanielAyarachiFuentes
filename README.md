@@ -82,8 +82,8 @@
 ---
 
 <div align="center">
-  <!-- La imagen 3D se generará aquí -->
-  <img src="profile-3d-contrib.svg" alt="Mi Gráfico de Contribuciones en 3D" style="margin-top:20px;"/>
+  <!-- La imagen 3D debe estar separada, ya que no depende de las Actions de tu repositorio -->
+  <img src="https://cdn.jsdelivr.net/gh/HectorDanielAyarachiFuentes/github-profile-3d-contrib/profile-gitblock.svg" alt="Mi Gráfico de Contribuciones en 3D" style="margin-top:20px;"/>
   <br>
   <img src="https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Vistas%20del%20Perfil&color=0e75b6&style=flat" alt="contador de visitas"/>
 </div>
