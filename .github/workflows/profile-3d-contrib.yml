@@ -2,7 +2,7 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # Todos los días a la medianoche
   workflow_dispatch:
 
 jobs:
@@ -28,13 +28,15 @@ jobs:
 
       - name: Descargar y descomprimir el generador de contribuciones 3D
         run: |
-          curl -L https://github.com/ashutosh1919/github-contribution-3d/archive/refs/heads/main.zip -o gen.zip
+          # ¡URL CORREGIDA! Apunta al repositorio correcto y su archivo ZIP
+          curl -L https://github.com/ashutosh1919/github-readme-3d-contrib/archive/refs/heads/main.zip -o gen.zip
           unzip gen.zip
-          mv github-contribution-3d-main github-contribution-3d
+          # ¡NOMBRE DE CARPETA CORREGIDO! Coincide con lo que unzip crea
+          mv github-readme-3d-contrib-main github-readme-3d-contrib
 
       - name: Ejecutar el generador y mover el archivo generado
         run: |
-          cd github-contribution-3d
+          cd github-readme-3d-contrib # <-- Esta línea ya estaba correcta, se mantiene
           npm install
           USERNAME=${{ github.repository_owner }} GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npm start
           mv profile-3d-contrib.svg ../profile-3d-contrib.svg
