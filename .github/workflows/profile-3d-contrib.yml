@@ -13,8 +13,7 @@ jobs:
       - uses: actions/checkout@v3 # Descarga tu repositorio
 
       - name: Generate 3D SVG and Commit # Paso para generar el archivo SVG y commitearlo
-        uses: yoshi389111/3d-contributions@main # <<-- ¡USA ESTA ACCIÓN!
-        # El repositorio solo tiene la rama 'main', que está activa.
+        uses: yoshi389111/3d-contributions@v1.0.0 # <<-- ¡CAMBIADO AQUÍ! USAMOS EL RELEASE TAG
         with:
           username: HectorDanielAyarachiFuentes # <<-- ¡Asegúrate de que este sea tu nombre de usuario de GitHub!
           output_path: profile-3d-contrib.svg # <<-- Nombre del archivo SVG que se generará en la raíz de tu repo
