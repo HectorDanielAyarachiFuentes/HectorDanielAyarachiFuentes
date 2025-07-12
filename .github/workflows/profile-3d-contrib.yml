@@ -14,7 +14,7 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v3
-      - uses: yoshi389111/github-profile-3d-contrib@main
-        with: # <-- ¡AQUÍ ESTÁ LA CORRECCIÓN! Se cambia 'env:' por 'with:'
+      - uses: yoshi389111/github-profile-3d-contrib@2c17d6f5fa26ca542f70e39e9425ea3cd0a4237f
+        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
