@@ -81,13 +81,13 @@
   <tr style="background-color: transparent;">
     <td align="center" valign="top" style="padding: 10px;">
       <!-- Asegúrate de que estas imágenes estén en tu repositorio principal -->
-      <img src="dulcesacandolengua.png" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"/>
+      <img src="Img\Dulce 3.jpg" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"/>
     </td>
     <td align="center" valign="top" style="padding: 10px;">
-      <img src="hermosa.png" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+      <img src="Img\Dulce 2.jpg" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
     </td>
     <td align="center" valign="top" style="padding: 10px;">
-      <img src="DULCE.jpg" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"/>
+      <img src="Img\Dulce 1.jpg" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"/>
     </td>
   </tr>
 </table>
