@@ -1,24 +1,22 @@
-name: GitHub-Profile-3D-Contrib
+name: GitHub Profile 3D Contributions
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Ejecuta esto todos los días a medianoche UTC
+    - cron: "0 0 * * *" # Se ejecuta cada día a medianoche UTC
   workflow_dispatch: # Permite ejecutar el workflow manualmente desde la pestaña "Actions"
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    name: Generate 3D Contribution Graph
     steps:
       - uses: actions/checkout@v3 # Descarga tu repositorio
 
-      - name: Generate 3D contribution graph
-        uses: trich-j/github-profile-3d-contrib@v0.1.0 # <<-- ¡NUEVA ACCIÓN Y VERSIÓN!
-        # Puedes intentar también '@main' si quieres la versión más reciente del código,
-        # pero 'v0.1.0' es la versión estable más reciente.
-
+      - name: Generate 3D SVG and Commit # Paso para generar el archivo SVG y commitearlo
+        uses: yoshi389111/3d-contributions@main # <<-- ¡USA ESTA ACCIÓN!
+        # El repositorio solo tiene la rama 'main', que está activa.
         with:
           username: HectorDanielAyarachiFuentes # <<-- ¡Asegúrate de que este sea tu nombre de usuario de GitHub!
-          output_path: profile-3d-contrib.svg # <<-- El nombre de archivo deseado para el SVG
+          output_path: profile-3d-contrib.svg # <<-- Nombre del archivo SVG que se generará en la raíz de tu repo
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token de GitHub, necesario para escribir en el repositorio
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token de GitHub para permisos de API y escritura
