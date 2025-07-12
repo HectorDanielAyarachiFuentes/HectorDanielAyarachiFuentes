@@ -11,7 +11,8 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v3
-      - uses: ashutosh1919/github-readme-3d-contrib@v2.3  # ← Acción correcta
+      - name: Generate 3D Contributions
+        uses: ashutosh1919/github-readme-3d-contrib@v2.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
