@@ -16,7 +16,7 @@
   Soy un desarrollador con un gran interés en construir soluciones tecnológicas que resuelvan problemas reales. Me encanta sumergirme en nuevas tecnologías y mejorar constantemente mis habilidades.
 </p>
 
-- 🌱 Actualmente estoy explorando **[Menciona alguna tecnología, ej: Arquitecturas de Microservicios, Inteligencia Artificial, etc.]**.
+- 🌱 Actualmente estoy explorando **[Menciona alguna tecnología, ej: Arquitecturas de Microservicios, IA]**.
 - 🚀 Busco colaborar en proyectos de código abierto que sean desafiantes e impacten positivamente.
 - 📫 La mejor forma de contactarme es a través de mi correo: **mp4o@hotmail.com**
 - 💬 Pregúntame sobre cualquier cosa, ¡me encanta compartir conocimiento!
@@ -49,7 +49,12 @@
 
 ---
 
----
+### 🐍 Mi Serpiente de Contribuciones
+
+<div align="center">
+  <!-- La imagen se generará aquí automáticamente por la GitHub Action -->
+  <img src="https://github.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/blob/output/github-contribution-grid-snake.svg" alt="Snake animation"/>
+</div>
 
 ---
 
@@ -76,11 +81,9 @@
 
 ---
 
-<!-- Estas son las visualizaciones dinámicas, asegúrate de tener las GitHub Actions configuradas -->
 <div align="center">
-  <img src="https://github.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/blob/output/github-contribution-grid-snake.svg" alt="snake" style="margin-top:20px;"/>
+  <!-- La imagen 3D debe estar separada, ya que no depende de las Actions de tu repositorio -->
   <img src="https://cdn.jsdelivr.net/gh/HectorDanielAyarachiFuentes/github-profile-3d-contrib/profile-gitblock.svg" alt="Mi Gráfico de Contribuciones en 3D" style="margin-top:20px;"/>
-</div>
-<div align="center">
+  <br>
   <img src="https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Vistas%20del%20Perfil&color=0e75b6&style=flat" alt="contador de visitas"/>
 </div>
