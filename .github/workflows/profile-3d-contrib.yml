@@ -1,21 +1,31 @@
-name: GitHub Profile 3D Contributions
+name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Se ejecuta cada día a medianoche UTC
-  workflow_dispatch: # Permite ejecutar el workflow manualmente desde la pestaña "Actions"
+    - cron: '0 0 * * *'  # Todos los días a la medianoche
+  workflow_dispatch:      # Permite ejecutarlo manualmente desde GitHub
 
 jobs:
-  build:
+  generate-3d-contrib:
     runs-on: ubuntu-latest
-    name: Generate 3D Contribution Graph
-    steps:
-      - uses: actions/checkout@v3 # Descarga tu repositorio
+    name: Generar gráfico 3D de contribuciones
 
-      - name: Generate 3D SVG and Commit # Paso para generar el archivo SVG y commitearlo
-        uses: yoshi389111/3d-contributions@v1.0.0 # <<-- ¡CAMBIADO AQUÍ! USAMOS EL RELEASE TAG
-        with:
-          username: HectorDanielAyarachiFuentes # <<-- ¡Asegúrate de que este sea tu nombre de usuario de GitHub!
-          output_path: profile-3d-contrib.svg # <<-- Nombre del archivo SVG que se generará en la raíz de tu repo
+    permissions:
+      contents: write  # Necesario para poder hacer commit en el repo
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Ejecutar generador 3D (fork de yoshi389111)
+        uses: yoshi389111/github-profile-3d-contrib@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token de GitHub para permisos de API y escritura
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Subir imagen generada al repo
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add profile-3d-contrib/**.svg
+          git commit -m "Actualizar imagen 3D de contribuciones" || echo "Sin cambios"
+          git push
