@@ -1,19 +1,17 @@
-name: Generate 3D Contribution Graph
+name: GitHub-Profile-3D-Contrib
 
 on:
-  # Se ejecuta todos los días a medianoche
   schedule:
-    - cron: "0 0 * * *"
-  # Permite ejecutarlo manualmente
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-3d-graph
+    name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v3
-      - uses: siddharth2016/github-profile-3d-contrib@main # <--- ¡ACCIÓN NUEVA Y CONFIABLE!
+      - uses: ashutosh1919/github-profile-3d-contrib@main # <--- ¡EL NOMBRE CORRECTO DEL AUTOR!
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
