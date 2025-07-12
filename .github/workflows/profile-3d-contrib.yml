@@ -2,16 +2,16 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Todos los días a la medianoche
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
-    
+
     permissions:
-      contents: write 
+      contents: write
 
     steps:
       - uses: actions/checkout@v3
@@ -19,7 +19,7 @@ jobs:
       - name: Instalar Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # O la versión que prefieras (ej. '18' o '20')
+          node-version: '16'
 
       - name: Instalar dependencias necesarias (para renderizado gráfico)
         run: |
@@ -27,20 +27,15 @@ jobs:
           sudo apt-get install -y libglu1-mesa xvfb
 
       - name: Clonar el generador de contribuciones 3D
-        # Aquí forzamos la autenticación con el token
-        run: git clone https://x-oauth-basic:${{ secrets.GITHUB_TOKEN }}@github.com/ashutosh1919/github-readme-3d-contrib.git
+        run: git clone https://github.com/ashutosh1919/github-contribution-3d.git
 
       - name: Ejecutar el generador y mover el archivo
         run: |
-          cd github-readme-3d-contrib
+          cd github-contribution-3d
           npm install
           USERNAME=${{ github.repository_owner }} GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npm start
-          
-          # Mover la imagen generada a la raíz de tu repositorio principal
           mv profile-3d-contrib.svg ../profile-3d-contrib.svg
-          
-          # Volver a la raíz de tu repositorio principal para el commit
-          cd .. 
+          cd ..
 
       - name: Configurar Git y Subir la Imagen
         run: |
