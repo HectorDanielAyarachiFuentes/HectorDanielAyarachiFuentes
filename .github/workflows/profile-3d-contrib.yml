@@ -2,7 +2,7 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Corre todos los días a medianoche
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -28,9 +28,9 @@ jobs:
 
       - name: Descargar y descomprimir el generador de contribuciones 3D
         run: |
-          curl -L https://github.com/ashutosh1919/github-contribution-3d/archive/refs/heads/master.zip -o gen.zip
+          curl -L https://github.com/ashutosh1919/github-contribution-3d/archive/refs/heads/main.zip -o gen.zip
           unzip gen.zip
-          mv github-contribution-3d-master github-contribution-3d
+          mv github-contribution-3d-main github-contribution-3d
 
       - name: Ejecutar el generador y mover el archivo generado
         run: |
@@ -47,4 +47,3 @@ jobs:
           git add profile-3d-contrib.svg
           git commit -m "Actualizar gráfico 3D de contribuciones" || echo "No hay cambios para commitear."
           git push
-
