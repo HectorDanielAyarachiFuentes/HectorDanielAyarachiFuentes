@@ -10,12 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v3 # Descarga tu repositorio
+      - uses: actions/checkout@v3
 
-      - name: Generate 3D contribution graph # Paso para generar el SVG 3D
-        uses: yoshi-shibuya/github-profile-3d-contrib@0.1.0 # <<-- ¡ESTA ES LA ACCIÓN CORRECTA!
+      - name: Generate 3D contribution graph
+        uses: yoshi-shibuya/github-profile-3d-contrib@master # <<-- ¡CAMBIADO AQUÍ!
+        # Si 'master' no funciona, podríamos intentar con 'v0.1.0' (con la 'v')
+        # o 'main' si el action usa esa rama principal.
+
         with:
           username: HectorDanielAyarachiFuentes # <<-- ¡Asegúrate de que este sea tu nombre de usuario de GitHub!
-          output_path: profile-3d-contrib.svg # <<-- El nombre de archivo deseado para el SVG, se guardará en la raíz del repo
+          output_path: profile-3d-contrib.svg # <<-- El nombre de archivo deseado para el SVG
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token de GitHub, necesario para escribir en el repositorio
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
