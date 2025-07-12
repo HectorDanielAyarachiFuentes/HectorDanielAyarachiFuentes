@@ -11,7 +11,7 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v3
-      - uses: ashutosh1919/github-profile-3d-contrib@main # <--- ¡EL NOMBRE CORRECTO DEL AUTOR!
+      - uses: ashutosh1919/github-contribution-3d-graph@main # <--- ¡¡¡ESTA ES LA LÍNEA CORRECTA!!!
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
