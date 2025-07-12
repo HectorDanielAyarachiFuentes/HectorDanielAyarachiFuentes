@@ -1,56 +1,86 @@
-# Hola, soy @HectorDanielAyarachiFuentes 👋
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+  <h1>Hola, soy Hector Daniel Ayarachi Fuentes 👋</h1>
+  <h3>Desarrollador de Software | Apasionado por la Tecnología y la Innovación</h3>
+</div>
 
-¡Bienvenido a mi perfil de GitHub!
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=7"/>
+</div>
 
-<img src="dulcesacandolengua.png" alt="Dulce Reina" style="width:300px;"/>
+---
 
-## Sobre Mí
-- 👀 Estoy interesado en la programación, la tecnología y la innovación.
-- 🌱 Actualmente estoy aprendiendo nuevas tecnologías y mejorando mis habilidades de desarrollo.
-- 💞️ Estoy buscando colaborar en proyectos interesantes y desafiantes.
-- 📫 Puedes contactarme a través de mi correo electrónico: [mp4o@hotmail.com](mailto:mp4o@hotmail.com)
+### 👨‍💻 Sobre Mí
+
+<p>
+  Soy un desarrollador con un gran interés en construir soluciones tecnológicas que resuelvan problemas reales. Me encanta sumergirme en nuevas tecnologías y mejorar constantemente mis habilidades.
+</p>
+
+- 🌱 Actualmente estoy explorando **[Menciona alguna tecnología, ej: Arquitecturas de Microservicios, Inteligencia Artificial, etc.]**.
+- 🚀 Busco colaborar en proyectos de código abierto que sean desafiantes e impacten positivamente.
+- 📫 La mejor forma de contactarme es a través de mi correo: **mp4o@hotmail.com**
+- 💬 Pregúntame sobre cualquier cosa, ¡me encanta compartir conocimiento!
+
+---
+
+### 🛠️ Mi Caja de Herramientas Tecnológicas
+
+<p align="center">
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="java" width="50" height="50"/></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
+  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="50" height="50"/></a>
+  <a href="https://vuejs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="50" height="50"/></a>
+  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="50" height="50"/></a>
+  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="50" height="50"/></a>
+  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50"/></a>
+</p>
+
+---
+
+### 📊 Mis Estadísticas en GitHub
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=HectorDanielAyarachiFuentes&show_icons=true&theme=dark&include_all_commits=true&count_private=true" alt="Estadísticas de Hector en GitHub"/>
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&theme=dark" alt="Lenguajes más usados"/>
+  <br/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HectorDanielAyarachiFuentes&theme=dark" alt="Racha de Contribuciones"/>
+</div>
+
+---
+
+---
+
+---
+
+### 🐾 Mi Fiel Compañera de Código: Dulce Reina 🐾
+
+<p align="center">
+  <i>La verdadera MVP (Most Valuable Puppy) de mis proyectos.</i>
+</p>
+
+<table align="center" style="border: none;">
+  <tr style="background-color: transparent;">
+    <td align="center" valign="top">
+      <img src="dulcesacandolengua.png" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"/>
+    </td>
+    <td align="center" valign="top">
+      <img src="hermosa.png" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+    </td>
+    <td align="center" valign="top">
+      <img src="DULCE.jpg" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"/>
+    </td>
+  </tr>
+</table>
 
 
-<img src="hermosa.png" alt="Dulce Reina" style="width:300px;">
+---
 
-
-
-## Sobre mi GitHub
-- 🔭 Aquí encontrarás una variedad de proyectos, desde aplicaciones web hasta juegos y más.
-- 🌐 Explora mis repositorios y descubre lo que he estado construyendo.
-- 🤝 ¡Siéntete libre de colaborar en mis proyectos o iniciar una conversación!
-
-¡Gracias por visitar mi perfil! 😊
-
-
-<img src="DULCE.jpg" alt="Dulce Reina" style="width:300px;"/>
-
-
-
-   <h3 style="color: yellow;font-size: 20px;"> 🖥️Programando🖥️<h3>
-
-</section>
-<section>
-  <img align="center" alt="JAVA" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
-  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> 
-  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> 
-  <img align="center" alt="JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> 
-  <img align="center" alt="Bootstrap" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"> 
-  <img align="center" alt="REACT" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-  <img align="center" alt="VUEJS" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg">
-</section>
-
-
-  <h3 style="color: yellow;font-size: 20px;text-align: center;"> ✅Contactos✅<h3>
-
-
-</section>
-<section> 
-  <a href="https://www.youtube.com/channel/UC5w8FxNulogaoKABY0Yymtw" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
-  <a href="https://instagram.com" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
- 	<a href="https://www.twitch.tv/" target="_blank"><img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" target="_blank"></a>
-  <a href="https://discord.gg/" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
-  <a href = "mailto:ramonchelo506@gmail.com" target="_blank"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-  
-</section>
+<!-- Estas son las visualizaciones dinámicas, asegúrate de tener las GitHub Actions configuradas -->
+<div align="center">
+  <img src="https://github.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/blob/output/github-contribution-grid-snake.svg" alt="snake" style="margin-top:20px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/HectorDanielAyarachiFuentes/github-profile-3d-contrib/profile-gitblock.svg" alt="Mi Gráfico de Contribuciones en 3D" style="margin-top:20px;"/>
+</div>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Vistas%20del%20Perfil&color=0e75b6&style=flat" alt="contador de visitas"/>
+</div>
