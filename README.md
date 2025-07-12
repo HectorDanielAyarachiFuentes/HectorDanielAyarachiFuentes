@@ -1,29 +1,32 @@
 <div id="header" align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+  <a href="https://github.com/HectorDanielAyarachiFuentes">
+    <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100" alt="Saludos GIF"/>
+  </a>
   <h1>Hola, soy Hector Daniel Ayarachi Fuentes 👋</h1>
   <h3>Desarrollador de Software | Apasionado por la Tecnología y la Innovación</h3>
 </div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=7"/>
+  <!-- Sugerencia: reducir el número de columnas para una mejor legibilidad en diferentes pantallas -->
+  <img src="https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=4" alt="Trofeos de GitHub"/>
 </div>
 
 ---
 
-### 👨‍💻 Sobre Mí
+## 👨‍💻 Sobre Mí
 
 <p>
   Soy un desarrollador con un gran interés en construir soluciones tecnológicas que resuelvan problemas reales. Me encanta sumergirme en nuevas tecnologías y mejorar constantemente mis habilidades.
 </p>
 
-- 🌱 Actualmente estoy explorando **[Menciona alguna tecnología, ej: Arquitecturas de Microservicios, IA]**.
+- 🌱 Actualmente estoy explorando **Inteligencia Artificial y Desarrollo Web Moderno**. <!-- ¡Recuerda completar esto con tus intereses actuales! -->
 - 🚀 Busco colaborar en proyectos de código abierto que sean desafiantes e impacten positivamente.
 - 📫 La mejor forma de contactarme es a través de mi correo: **mp4o@hotmail.com**
 - 💬 Pregúntame sobre cualquier cosa, ¡me encanta compartir conocimiento!
 
 ---
 
-### 🛠️ Mi Caja de Herramientas Tecnológicas
+## 🛠️ Mi Caja de Herramientas Tecnológicas
 
 <p align="center">
   <a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="java" width="50" height="50"/></a>
@@ -37,7 +40,7 @@
 
 ---
 
-### 📊 Mis Estadísticas en GitHub
+## 📊 Mis Estadísticas en GitHub
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=HectorDanielAyarachiFuentes&show_icons=true&theme=dark&include_all_commits=true&count_private=true" alt="Estadísticas de Hector en GitHub"/>
@@ -49,61 +52,48 @@
 
 ---
 
-### 🐍 Mi Serpiente de Contribuciones
+## 🐍 Mi Serpiente de Contribuciones
 
 <div align="center">
-  <!-- La imagen se generará aquí automáticamente por la GitHub Action -->
-  <img src="https://github.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/blob/output/github-contribution-grid-snake.svg" alt="Snake animation"/>
+  <!-- Asegúrate de que la acción de GitHub para generar esta imagen esté configurada y funcionando -->
+  <!-- Ruta corregida para ser más robusta en entornos que no sean GitHub directamente -->
+  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/output/github-contribution-grid-snake.svg" alt="Snake animation"/>
 </div>
 
 ---
 
-### 🐾 Mi Fiel Compañera de Código: Dulce Reina 🐾
+## 🧱 Mis Contribuciones en 3D
+
+<div align="center">
+  <!-- Asegúrate de que la acción de GitHub para generar esta imagen esté configurada y funcionando -->
+  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green.svg" alt="Gráfico 3D de Contribuciones"/>
+</div>
+
+---
+
+## 🐾 Mi Fiel Compañera de Código: Dulce Reina 🐾
 
 <p align="center">
   <i>La verdadera MVP (Most Valuable Puppy) de mis proyectos.</i>
 </p>
 
-<table align="center" style="border: none;">
+<table align="center" style="border: none; border-collapse: collapse;">
   <tr style="background-color: transparent;">
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="padding: 10px;">
+      <!-- Asegúrate de que estas imágenes estén en tu repositorio principal -->
       <img src="dulcesacandolengua.png" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"/>
     </td>
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="padding: 10px;">
       <img src="hermosa.png" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
     </td>
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="padding: 10px;">
       <img src="DULCE.jpg" alt="Dulce Reina" width="250" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"/>
     </td>
   </tr>
 </table>
 
-
 ---
 
 <div align="center">
-  <!-- El gráfico 3D se mostrará aquí -->
- <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-red.svg" width="100%" alt="Contribuciones 3D en rojo" />
-
-
-<img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-red.svg" width="100%" alt="Contribuciones 3D en rojo" />
-
-
-
-## 🧱 Mis contribuciones en 3D
-
-### Verde
-![Verde](https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green.svg)
-
-### Rojo
-![Rojo](https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-red.svg)
-
-### Estacional
-![Estaciones](https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-season.svg)
-
-
   <img src="https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Vistas%20del%20Perfil&color=0e75b6&style=flat" alt="contador de visitas"/>
 </div>
-
-
-
