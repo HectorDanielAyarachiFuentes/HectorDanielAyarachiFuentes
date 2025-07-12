@@ -83,7 +83,24 @@
 
 <div align="center">
   <!-- El gráfico 3D se mostrará aquí -->
-  ![Rojo](https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-red.svg)
+ <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-red.svg" width="100%" alt="Contribuciones 3D en rojo" />
+
+
+<img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-red.svg" width="100%" alt="Contribuciones 3D en rojo" />
+
+
+
+## 🧱 Mis contribuciones en 3D
+
+### Verde
+![Verde](https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green.svg)
+
+### Rojo
+![Rojo](https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-red.svg)
+
+### Estacional
+![Estaciones](https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-season.svg)
+
 
   <img src="https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Vistas%20del%20Perfil&color=0e75b6&style=flat" alt="contador de visitas"/>
 </div>
