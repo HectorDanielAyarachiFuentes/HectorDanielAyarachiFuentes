@@ -1,7 +1,21 @@
-- name: Generate 3D contribution graph
-  uses: yoshi-shibuya/github-profile-3d-contrib@main
-  with:
-    username: HectorDanielAyarachiFuentes
-    output_path: profile-3d-contrib.svg
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate 3D contribution graph
+        uses: yoshi-shibuya/github-profile-3d-contrib@v0.1.0 # <<-- ¡USA @v0.1.0!
+        with:
+          username: HectorDanielAyarachiFuentes
+          output_path: profile-3d-contrib.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
