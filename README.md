@@ -7,8 +7,9 @@
 </div>
 
 <div align="center">
-  <!-- Sugerencia: reducir el número de columnas para una mejor legibilidad en diferentes pantallas -->
-  <img src="[[https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=4](https://github.com/HectorDanielAyarachiFuentes/fotos-dulce/blob/main/e1b15720-ef71-45ec-a6f9-4228ff59fcb5.jpeg?raw=true)](https://codepen.io/HectorDanielAyarachiFuentes)" alt="codepen.io - Mi perfil"/>
+  <a href="https://codepen.io/HectorDanielAyarachiFuentes" title="Visita mi perfil en CodePen">
+    <img src="https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=4" alt="Trofeos de GitHub de Hector Daniel Ayarachi Fuentes"/>
+  </a>
 </div>
 
 ---
