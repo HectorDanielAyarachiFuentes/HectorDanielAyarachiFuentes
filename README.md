@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-  <a href="https://codepen.io/HectorDanielAyarachiFuentes" title="Visita mi perfil en CodePen">
+  <a href="https://codepen.io/HectorDanielAyarachiFuentes" title="Visita mi perfil en CodePen" target="_blank" rel="noopener noreferrer">
     <img src="https://github.com/HectorDanielAyarachiFuentes/fotos-dulce/blob/main/e1b15720-ef71-45ec-a6f9-4228ff59fcb5.jpeg?raw=true" alt="Mi perfil de CodePen" width="200"/>
   </a>
 </div>
