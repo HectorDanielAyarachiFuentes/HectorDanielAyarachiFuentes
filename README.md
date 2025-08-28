@@ -8,7 +8,7 @@
 
 <div align="center">
   <!-- Sugerencia: reducir el número de columnas para una mejor legibilidad en diferentes pantallas -->
-  <img src="https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=4" alt="Trofeos de GitHub"/>
+  <img src="[https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=4](https://codepen.io/HectorDanielAyarachiFuentes)" alt="codepen.io - Mi perfil"/>
 </div>
 
 ---
