@@ -6,7 +6,11 @@
   <h3>Desarrollador de Software | Apasionado por la Tecnología y la Innovación</h3>
 </div>
 
-[![Trofeos de GitHub de Hector Daniel Ayarachi Fuentes](https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=4)](https://codepen.io/HectorDanielAyarachiFuentes)
+<div align="center">
+  <a href="https://codepen.io/HectorDanielAyarachiFuentes" title="Visita mi perfil en CodePen">
+    <img src="https://github.com/HectorDanielAyarachiFuentes/fotos-dulce/blob/main/e1b15720-ef71-45ec-a6f9-4228ff59fcb5.jpeg?raw=true" alt="Mi perfil de CodePen" width="200"/>
+  </a>
+</div>
 
 ---
 
