@@ -8,7 +8,7 @@
 
 <div align="center">
   <a href="https://codepen.io/HectorDanielAyarachiFuentes" title="Visita mi perfil en CodePen">
-    <img src="https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=4" alt="Trofeos de GitHub de Hector Daniel Ayarachi Fuentes"/>
+    <img src="[https://github-profile-trophy.vercel.app/?username=HectorDanielAyarachiFuentes&theme=dracula&column=4](https://github.com/HectorDanielAyarachiFuentes/fotos-dulce/blob/main/e1b15720-ef71-45ec-a6f9-4228ff59fcb5.jpeg?raw=true)" alt="Trofeos de GitHub de Hector Daniel Ayarachi Fuentes"/>
   </a>
 </div>
 
