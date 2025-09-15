@@ -1,0 +1,21 @@
+name: Actualizar Publicaciones del Blog
+
+on:
+  schedule:
+    # Se ejecuta cada 6 horas para buscar nuevas publicaciones
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme-with-blog:
+    name: Actualizar README con las últimas publicaciones del blog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          # ¡IMPORTANTE! Reemplaza esta URL con el feed RSS de tu blog.
+          # Ejemplos:
+          # Medium: https://medium.com/feed/@tu-usuario
+          # Dev.to: https://dev.to/feed/tu-usuario
+          feed_list: "https://medium.com/feed/@usuario"
