@@ -109,12 +109,3 @@
     <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&card_width=320" alt="Top Languages" />
   </a>
 </p>
-
-<p align="center">
-  <a href="https://github.com/HectorDanielAyarachiFuentes/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HectorDanielAyarachiFuentes&repo=github-readme-stats" alt="Pinned Repo: github-readme-stats" />
-  </a>
-  <a href="https://github.com/HectorDanielAyarachiFuentes/convoychat">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HectorDanielAyarachiFuentes&repo=convoychat" alt="Pinned Repo: convoychat" />
-  </a>
-</p>
