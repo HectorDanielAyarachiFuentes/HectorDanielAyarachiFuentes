@@ -18,4 +18,4 @@ jobs:
           # Ejemplos:
           # Medium: https://medium.com/feed/@tu-usuario
           # Dev.to: https://dev.to/feed/tu-usuario
-          feed_list: "https://medium.com/feed/@usuario"
+          feed_list: "https://medium.com/feed/@HectorDanielAyarachiFuentes"
