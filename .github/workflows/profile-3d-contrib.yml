@@ -3,34 +3,30 @@ name: GitHub-Profile-3D-Contrib
 on:
   schedule:
     - cron: '0 0 * * *'  # Todos los días a la medianoche
-  workflow_dispatch:      # Permite ejecutarlo manualmente
+  workflow_dispatch:      # Permite ejecutarlo manualmente desde GitHub
 
 jobs:
   generate-3d-contrib:
     runs-on: ubuntu-latest
     name: Generar gráfico 3D de contribuciones
 
+    permissions:
+      contents: write  # Necesario para poder hacer commit en el repo
+
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Ejecutar generador 3D (fork de yoshi389111)
-        run: |
-          git clone https://github.com/yoshi389111/github-profile-3d-contrib.git
-          cd github-profile-3d-contrib
-          npm install
-          USERNAME=${{ github.repository_owner }} THEME=tokyonight node ./src/index.js
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          THEME: tokyonight
 
-      - name: Verificar que la imagen fue generada
+      - name: Subir imagen generada al repo
         run: |
-          if [ ! -f "github-profile-3d-contrib/profile-3d-contrib/profile-tokyonight.svg" ]; then
-            echo "El archivo de imagen 3D no fue generado. El workflow fallará para que puedas investigarlo."
-            exit 1
-          fi
-          mkdir -p profile-3d-contrib
-          cp github-profile-3d-contrib/profile-3d-contrib/profile-tokyonight.svg profile-3d-contrib/
-
-      - name: Commit & Push de la imagen 3D
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Chore: Actualizar imagen 3D de contribuciones"
-          file_pattern: profile-3d-contrib/profile-tokyonight.svg
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add profile-3d-contrib/**.svg
+          git commit -m "Actualizar imagen 3D de contribuciones" || echo "Sin cambios"
+          git push
