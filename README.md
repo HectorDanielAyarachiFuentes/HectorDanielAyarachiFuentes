@@ -49,7 +49,7 @@
   <br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&theme=tokyonight" alt="Lenguajes más usados"/>
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HectorDanielAyarachiFuentes&theme=tokyonight" alt="Racha de Contribuciones"/>
+  <img src="https://streak-stats.demolab.com/?user=HectorDanielAyarachiFuentes&theme=tokyonight" alt="Racha de Contribuciones"/>
 </div>
 
 ---
@@ -68,7 +68,7 @@
 
 <div align="center">
   <!-- Asegúrate de que la acción de GitHub para generar esta imagen esté configurada y funcionando -->
-  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-night-green.svg" alt="Gráfico 3D de Contribuciones"/>
+  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green-animate.svg" alt="Gráfico 3D de Contribuciones"/>
 </div>
 
 ---
@@ -99,5 +99,3 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Vistas%20del%20Perfil&color=0e75b6&style=flat" alt="contador de visitas"/>
 </div>
-
-
