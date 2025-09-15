@@ -27,14 +27,6 @@
 
 ---
 
-## 📝 Mis Últimas Publicaciones en el Blog
-
-<!-- BLOG-POST-LIST:START -->
-<!-- La lista de publicaciones del blog se actualizará automáticamente aquí -->
-<!-- BLOG-POST-LIST:END -->
-
----
-
 ## 🛠️ Mi Caja de Herramientas Tecnológicas
 
 <p align="center">
