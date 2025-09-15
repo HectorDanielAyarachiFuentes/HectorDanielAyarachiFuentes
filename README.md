@@ -8,7 +8,7 @@
 
 <div align="center">
   <a href="https://codepen.io/HectorDanielAyarachiFuentes" title="Visita mi perfil en CodePen" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/HectorDanielAyarachiFuentes/fotos-dulce/blob/main/e1b15720-ef71-45ec-a6f9-4228ff59fcb5.jpeg?raw=true" alt="Mi perfil de CodePen" width="200"/>
+    <img src="https://github.com/HectorDanielAyarachiFuentes/fotos-dulce/blob/main/e1b15720-ef71-45ec-a6f9-4228ff59fcb5.jpeg?raw=true" alt="Mi perra, Dulce Reina" width="200"/>
   </a>
 </div>
 
@@ -40,7 +40,7 @@
 <p align="center">
   <a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="java" width="50" height="50"/></a>
   <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="python" width="50" height="50"/></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/></a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="50" height="50"/></a>
   <a href="https://vuejs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="50" height="50"/></a>
   <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="50" height="50"/></a>
@@ -53,11 +53,11 @@
 ## 📊 Mis Estadísticas en GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=HectorDanielAyarachiFuentes&show_icons=true&theme=default&include_all_commits=true&count_private=true" alt="Estadísticas de Hector en GitHub"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=HectorDanielAyarachiFuentes&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Estadísticas de Hector en GitHub"/>
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&theme=default" alt="Lenguajes más usados"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&theme=tokyonight" alt="Lenguajes más usados"/>
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HectorDanielAyarachiFuentes&theme=default" alt="Racha de Contribuciones"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HectorDanielAyarachiFuentes&theme=tokyonight" alt="Racha de Contribuciones"/>
 </div>
 
 ---
@@ -76,7 +76,7 @@
 
 <div align="center">
   <!-- Asegúrate de que la acción de GitHub para generar esta imagen esté configurada y funcionando -->
-  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green.svg" alt="Gráfico 3D de Contribuciones"/>
+  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-tokyonight.svg" alt="Gráfico 3D de Contribuciones"/>
 </div>
 
 ---

@@ -15,8 +15,9 @@ jobs:
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Colores para que coincida con el tema tokyonight
           outputs: |
-            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake.svg?color_snake=auto&color_dots=#161620,#414868,#70a598,#7aa2f7,#bb9af7
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - uses: crazy-max/ghaction-github-pages@v3.1.0
