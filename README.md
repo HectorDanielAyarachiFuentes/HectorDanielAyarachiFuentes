@@ -49,7 +49,7 @@
   <br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&theme=tokyonight" alt="Lenguajes más usados"/>
   <br/>
-  <img src="https://grs.h3x.stream/?user=HectorDanielAyarachiFuentes&theme=tokyonight" alt="Racha de Contribuciones"/>
+ 
 </div>
 
 ---
