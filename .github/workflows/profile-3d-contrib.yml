@@ -3,7 +3,7 @@ name: GitHub-Profile-3D-Contrib
 on:
   schedule:
     - cron: '0 0 * * *'  # Todos los días a la medianoche
-  workflow_dispatch:      # Permite ejecutarlo manualmente desde GitHub
+  workflow_dispatch:      # Permite ejecutarlo manualmente
 
 jobs:
   generate-3d-contrib:
@@ -14,18 +14,20 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Ejecutar generador 3D (fork de yoshi389111)
-        uses: yoshi389111/github-profile-3d-contrib@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-          THEME: tokyonight
+        run: |
+          git clone https://github.com/yoshi389111/github-profile-3d-contrib.git
+          cd github-profile-3d-contrib
+          npm install
+          USERNAME=${{ github.repository_owner }} THEME=tokyonight node ./src/index.js
 
       - name: Verificar que la imagen fue generada
         run: |
-          if [ ! -f "profile-3d-contrib/profile-tokyonight.svg" ]; then
+          if [ ! -f "github-profile-3d-contrib/profile-3d-contrib/profile-tokyonight.svg" ]; then
             echo "El archivo de imagen 3D no fue generado. El workflow fallará para que puedas investigarlo."
             exit 1
           fi
+          mkdir -p profile-3d-contrib
+          cp github-profile-3d-contrib/profile-3d-contrib/profile-tokyonight.svg profile-3d-contrib/
 
       - name: Commit & Push de la imagen 3D
         uses: stefanzweifel/git-auto-commit-action@v5
