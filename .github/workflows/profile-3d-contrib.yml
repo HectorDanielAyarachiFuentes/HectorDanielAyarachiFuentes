@@ -14,19 +14,24 @@ jobs:
       contents: write  # Necesario para poder hacer commit en el repo
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Ejecutar generador 3D (fork de yoshi389111)
-        uses: yoshi389111/github-profile-3d-contrib@latest
+        uses: yoshi389111/github-profile-3d-contrib@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           THEME: tokyonight
 
-      - name: Subir imagen generada al repo
+      - name: Verificar que la imagen fue generada
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add profile-3d-contrib/**.svg
-          git commit -m "Actualizar imagen 3D de contribuciones" || echo "Sin cambios"
-          git push
+          if [ ! -f "profile-3d-contrib/profile-tokyonight.svg" ]; then
+            echo "El archivo de imagen 3D no fue generado. El workflow fallará para que puedas investigarlo."
+            exit 1
+          fi
+
+      - name: Commit & Push de la imagen 3D
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Chore: Actualizar imagen 3D de contribuciones"
+          file_pattern: profile-3d-contrib/profile-tokyonight.svg
