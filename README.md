@@ -68,7 +68,7 @@
 
 <div align="center">
   <!-- Asegúrate de que la acción de GitHub para generar esta imagen esté configurada y funcionando -->
-  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-tokyonight.svg" alt="Gráfico 3D de Contribuciones"/>
+  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green-animate.svg" alt="Gráfico 3D de Contribuciones"/>
 </div>
 
 ---
