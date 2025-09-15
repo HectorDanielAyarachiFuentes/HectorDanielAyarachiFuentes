@@ -18,6 +18,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          THEME: tokyonight
       - name: Commit & Push
         run: |
           git config user.name github-actions
