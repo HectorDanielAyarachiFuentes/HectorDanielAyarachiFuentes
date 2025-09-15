@@ -45,11 +45,11 @@
 ## 📊 Mis Estadísticas en GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=HectorDanielAyarachiFuentes&show_icons=true&theme=dark&include_all_commits=true&count_private=true" alt="Estadísticas de Hector en GitHub"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=HectorDanielAyarachiFuentes&show_icons=true&theme=default&include_all_commits=true&count_private=true" alt="Estadísticas de Hector en GitHub"/>
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&theme=dark" alt="Lenguajes más usados"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&theme=default" alt="Lenguajes más usados"/>
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HectorDanielAyarachiFuentes&theme=dark" alt="Racha de Contribuciones"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HectorDanielAyarachiFuentes&theme=default" alt="Racha de Contribuciones"/>
 </div>
 
 ---
