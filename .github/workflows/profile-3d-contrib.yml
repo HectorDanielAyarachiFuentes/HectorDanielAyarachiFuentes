@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Generar gráfico 3D de contribuciones
 
-    permissions:
-      contents: write  # Necesario para poder hacer commit en el repo
-
     steps:
       - uses: actions/checkout@v4
 
