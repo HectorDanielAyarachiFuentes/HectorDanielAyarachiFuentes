@@ -101,11 +101,3 @@
 </div>
 
 
-<p align="center">
-  <a href="https://github.com/HectorDanielAyarachiFuentes/github-readme-stats">
-    <img height="200" src="https://github-readme-stats.vercel.app/api?username=HectorDanielAyarachiFuentes" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/HectorDanielAyarachiFuentes/convoychat">
-    <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&card_width=320" alt="Top Languages" />
-  </a>
-</p>
