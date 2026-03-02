@@ -56,8 +56,9 @@ Soy un desarrollador con un gran interés en construir soluciones tecnológicas 
 ## 📊 Estadísticas de Desarrollo
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=HectorDanielAyarachiFuentes&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="Estadísticas Generales"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HectorDanielAyarachiFuentes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Lenguajes Principales"/>
+  <img src="CARD/stats-card.svg" alt="Estadísticas Generales"/>
+  &nbsp;&nbsp;
+  <img src="CARD/langs-card.svg" alt="Lenguajes Principales"/>
 </div>
 
 <br/>
