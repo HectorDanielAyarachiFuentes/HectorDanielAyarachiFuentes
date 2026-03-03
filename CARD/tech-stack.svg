@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 860 500" width="860" height="500" role="img"
+     aria-label="Arsenal Tecnológico de Hector Daniel Ayarachi Fuentes">
+
+  <title>Arsenal Tecnológico</title>
+
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#0f1724"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+
+    <!-- Card gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1a2332" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Accent gradients per section -->
+    <linearGradient id="frontendAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+    <linearGradient id="backendAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9ece6a"/>
+      <stop offset="100%" stop-color="#73daca"/>
+    </linearGradient>
+    <linearGradient id="devopsAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f7768e"/>
+      <stop offset="100%" stop-color="#ff9e64"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glowBlue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.47
+                0 0 0 0 0.64
+                0 0 0 0 0.97
+                0 0 0 0.8 0" result="colorBlur"/>
+      <feMerge>
+        <feMergeNode in="colorBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowGreen" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.61
+                0 0 0 0 0.81
+                0 0 0 0 0.42
+                0 0 0 0.8 0" result="colorBlur"/>
+      <feMerge>
+        <feMergeNode in="colorBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowRed" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.97
+                0 0 0 0 0.46
+                0 0 0 0 0.56
+                0 0 0 0.8 0" result="colorBlur"/>
+      <feMerge>
+        <feMergeNode in="colorBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="textGlow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Clip paths for cards -->
+    <clipPath id="cardClip1">
+      <rect x="20" y="72" width="820" height="118" rx="12"/>
+    </clipPath>
+    <clipPath id="cardClip2">
+      <rect x="20" y="210" width="820" height="118" rx="12"/>
+    </clipPath>
+    <clipPath id="cardClip3">
+      <rect x="20" y="348" width="820" height="118" rx="12"/>
+    </clipPath>
+
+    <!-- Animated gradient sweep -->
+    <linearGradient id="shimmer" x1="-100%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="860" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="50" x2="860" y2="50" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="860" y2="100" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="860" y2="150" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="860" y2="200" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="860" y2="250" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="860" y2="300" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="0" y1="350" x2="860" y2="350" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="860" y2="400" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="0" y1="450" x2="860" y2="450" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="500" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="500" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="500" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="500" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="500" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="500" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="500" stroke="#7aa2f7" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="500" stroke="#7aa2f7" stroke-width="0.5"/>
+  </g>
+
+  <!-- ── TITLE ── -->
+  <g>
+    <!-- Decorative line left -->
+    <line x1="20" y1="32" x2="210" y2="32" stroke="url(#frontendAccent)" stroke-width="1" opacity="0.5"/>
+    <!-- Title text -->
+    <text x="430" y="38" font-family="'Segoe UI', system-ui, sans-serif" font-size="22" font-weight="700"
+          fill="#e6edf3" text-anchor="middle" letter-spacing="1">
+      🛠 Arsenal Tecnológico
+    </text>
+    <!-- Decorative line right -->
+    <line x1="650" y1="32" x2="840" y2="32" stroke="url(#frontendAccent)" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- CARD 1 — FRONTEND & DISEÑO                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- Card shadow -->
+  <rect x="20" y="72" width="820" height="118" rx="12" fill="#000" opacity="0.4" filter="url(#softShadow)"/>
+  <!-- Card body -->
+  <rect x="20" y="72" width="820" height="118" rx="12" fill="url(#cardGrad)"/>
+  <!-- Shimmer overlay -->
+  <rect x="20" y="72" width="820" height="118" rx="12" fill="url(#shimmer)"/>
+  <!-- Left accent bar -->
+  <rect x="20" y="72" width="4" height="118" rx="2" fill="url(#frontendAccent)"/>
+  <!-- Top accent line -->
+  <rect x="20" y="72" width="820" height="1" rx="0" fill="url(#frontendAccent)" opacity="0.6"/>
+
+  <!-- Section label -->
+  <text x="42" y="98" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700"
+        fill="#7aa2f7" filter="url(#textGlow)" letter-spacing="0.5">🎨 Frontend &amp; Diseño</text>
+
+  <!-- JS badge -->
+  <g transform="translate(42, 108)" filter="url(#glowBlue)">
+    <rect width="64" height="28" rx="6" fill="#f0db4f"/>
+    <text x="6" y="19" font-family="monospace" font-size="11" font-weight="800" fill="#323330">JS</text>
+    <text x="23" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#323330">JavaScript</text>
+  </g>
+  <!-- React badge -->
+  <g transform="translate(116, 108)" filter="url(#glowBlue)">
+    <rect width="56" height="28" rx="6" fill="#20232a"/>
+    <text x="6" y="12" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#61dafb">⚛</text>
+    <text x="24" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#61dafb">React</text>
+  </g>
+  <!-- Vue badge -->
+  <g transform="translate(182, 108)" filter="url(#glowBlue)">
+    <rect width="54" height="28" rx="6" fill="#1a1f2e"/>
+    <text x="6" y="11" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" fill="#42b883">▼</text>
+    <text x="22" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#42b883">Vue.js</text>
+  </g>
+  <!-- HTML5 badge -->
+  <g transform="translate(246, 108)">
+    <rect width="58" height="28" rx="6" fill="#e44d26"/>
+    <text x="6" y="20" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="white">HTML5</text>
+    <text x="43" y="20" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="white" opacity="0.8">5</text>
+  </g>
+  <!-- CSS3 badge -->
+  <g transform="translate(314, 108)">
+    <rect width="54" height="28" rx="6" fill="#264de4"/>
+    <text x="6" y="20" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="white">CSS3</text>
+    <text x="41" y="20" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="white" opacity="0.8">↗</text>
+  </g>
+  <!-- Bootstrap badge -->
+  <g transform="translate(378, 108)">
+    <rect width="76" height="28" rx="6" fill="#7952b3"/>
+    <text x="8" y="19" font-family="serif" font-size="13" font-weight="900" fill="white">B</text>
+    <text x="22" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="white">Bootstrap</text>
+  </g>
+
+  <!-- Skill level dots — Frontend -->
+  <g opacity="0.5">
+    <text x="42" y="158" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#7aa2f7">●●●●●</text>
+    <text x="116" y="158" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#7aa2f7">●●●●○</text>
+    <text x="182" y="158" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#7aa2f7">●●●○○</text>
+    <text x="246" y="158" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#e44d26">●●●●●</text>
+    <text x="314" y="158" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#264de4">●●●●●</text>
+    <text x="378" y="158" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#7952b3">●●●●○</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- CARD 2 — BACKEND & DATOS                              -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <rect x="20" y="210" width="820" height="118" rx="12" fill="#000" opacity="0.4" filter="url(#softShadow)"/>
+  <rect x="20" y="210" width="820" height="118" rx="12" fill="url(#cardGrad)"/>
+  <rect x="20" y="210" width="820" height="118" rx="12" fill="url(#shimmer)"/>
+  <rect x="20" y="210" width="4" height="118" rx="2" fill="url(#backendAccent)"/>
+  <rect x="20" y="210" width="820" height="1" rx="0" fill="url(#backendAccent)" opacity="0.6"/>
+
+  <text x="42" y="236" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700"
+        fill="#9ece6a" filter="url(#textGlow)" letter-spacing="0.5">⚙️ Backend &amp; Datos</text>
+
+  <!-- Python badge -->
+  <g transform="translate(42, 246)" filter="url(#glowGreen)">
+    <rect width="62" height="28" rx="6" fill="#3776ab"/>
+    <text x="6" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#ffd43b">🐍</text>
+    <text x="22" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="white">Python</text>
+  </g>
+  <!-- Java badge -->
+  <g transform="translate(114, 246)" filter="url(#glowGreen)">
+    <rect width="52" height="28" rx="6" fill="#007396"/>
+    <text x="8" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="16" fill="#f89820">☕</text>
+    <text x="28" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="white">Java</text>
+  </g>
+  <!-- Node.js badge -->
+  <g transform="translate(176, 246)" filter="url(#glowGreen)">
+    <rect width="66" height="28" rx="6" fill="#215732"/>
+    <text x="6" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#8cc84b">⬡</text>
+    <text x="20" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#8cc84b">Node.js</text>
+  </g>
+  <!-- MySQL badge -->
+  <g transform="translate(252, 246)">
+    <rect width="62" height="28" rx="6" fill="#00618a"/>
+    <text x="6" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#f29111">🗄</text>
+    <text x="20" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="white">MySQL</text>
+  </g>
+
+  <!-- Skill dots — Backend -->
+  <g opacity="0.5">
+    <text x="42" y="296" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#9ece6a">●●●●○</text>
+    <text x="114" y="296" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#f89820">●●●○○</text>
+    <text x="176" y="296" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#8cc84b">●●●●○</text>
+    <text x="252" y="296" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#00618a">●●●○○</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- CARD 3 — HERRAMIENTAS & DEVOPS                        -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <rect x="20" y="348" width="820" height="118" rx="12" fill="#000" opacity="0.4" filter="url(#softShadow)"/>
+  <rect x="20" y="348" width="820" height="118" rx="12" fill="url(#cardGrad)"/>
+  <rect x="20" y="348" width="820" height="118" rx="12" fill="url(#shimmer)"/>
+  <rect x="20" y="348" width="4" height="118" rx="2" fill="url(#devopsAccent)"/>
+  <rect x="20" y="348" width="820" height="1" rx="0" fill="url(#devopsAccent)" opacity="0.6"/>
+
+  <text x="42" y="374" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700"
+        fill="#f7768e" filter="url(#textGlow)" letter-spacing="0.5">🔧 Herramientas &amp; DevOps</text>
+
+  <!-- Git badge -->
+  <g transform="translate(42, 384)" filter="url(#glowRed)">
+    <rect width="46" height="28" rx="6" fill="#f05032"/>
+    <text x="7" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="white">Git</text>
+    <text x="29" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="white" opacity="0.7">⎇</text>
+  </g>
+  <!-- GitHub badge -->
+  <g transform="translate(98, 384)" filter="url(#glowRed)">
+    <rect width="66" height="28" rx="6" fill="#24292e"/>
+    <text x="8" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="white">⚙</text>
+    <text x="24" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="white">GitHub</text>
+  </g>
+  <!-- VS Code badge -->
+  <g transform="translate(174, 384)">
+    <rect width="70" height="28" rx="6" fill="#0065a9"/>
+    <text x="6" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="white">⟨⟩</text>
+    <text x="24" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="white">VS Code</text>
+  </g>
+  <!-- Linux badge -->
+  <g transform="translate(254, 384)">
+    <rect width="58" height="28" rx="6" fill="#1a1a2e"/>
+    <text x="6" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#f5c518">🐧</text>
+    <text x="24" y="19" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600" fill="#f5c518">Linux</text>
+  </g>
+
+  <!-- Skill dots — DevOps -->
+  <g opacity="0.5">
+    <text x="42" y="434" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#f7768e">●●●●○</text>
+    <text x="98" y="434" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#f7768e">●●●●●</text>
+    <text x="174" y="434" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#0065a9">●●●●●</text>
+    <text x="254" y="434" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#f5c518">●●●○○</text>
+  </g>
+
+  <!-- ── DECORATIVE CORNER ACCENTS ── -->
+  <!-- Top-left -->
+  <path d="M20,84 L20,72 L32,72" fill="none" stroke="url(#frontendAccent)" stroke-width="2" opacity="0.7"/>
+  <!-- Top-right -->
+  <path d="M828,84 L840,84 L840,72 L828,72" fill="none" stroke="url(#frontendAccent)" stroke-width="2" opacity="0.7"/>
+
+  <!-- ── ANIMATED FLOATING PARTICLES ── -->
+  <g opacity="0.4">
+    <circle cx="720" cy="110" r="2" fill="#7aa2f7">
+      <animate attributeName="cy" values="110;95;110" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="130" r="1.5" fill="#bb9af7">
+      <animate attributeName="cy" values="130;115;130" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="105" r="2.5" fill="#7aa2f7">
+      <animate attributeName="cy" values="105;120;105" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="740" cy="250" r="2" fill="#9ece6a">
+      <animate attributeName="cy" values="250;235;250" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="790" cy="270" r="1.5" fill="#73daca">
+      <animate attributeName="cy" values="270;255;270" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="390" r="2" fill="#f7768e">
+      <animate attributeName="cy" values="390;375;390" dur="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="810" cy="405" r="1.5" fill="#ff9e64">
+      <animate attributeName="cy" values="405;418;405" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ── ANIMATED SCANNING LINE ── -->
+  <rect x="24" y="72" width="4" height="0" rx="2" fill="url(#frontendAccent)" opacity="0">
+    <!-- pulse effect on the accent bar -->
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="0;118;0" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ── BOTTOM FOOTER ── -->
+  <text x="430" y="488" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"
+        fill="#6e7681" text-anchor="middle" letter-spacing="0.5">
+    Hector Daniel Ayarachi Fuentes · Argentina · 2026
+  </text>
+
+</svg>
