@@ -2,13 +2,9 @@
   <defs>
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%"   stop-color="#08102a"/>
-      <stop offset="40%"  stop-color="#0d2055"/>
-      <stop offset="75%"  stop-color="#1b4080"/>
+      <stop offset="45%"  stop-color="#0d2055"/>
+      <stop offset="80%"  stop-color="#1b4080"/>
       <stop offset="100%" stop-color="#2a6090"/>
-    </linearGradient>
-    <linearGradient id="horizonGlow" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#74ACDF" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#74ACDF" stop-opacity="0.35"/>
     </linearGradient>
     <linearGradient id="argGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#74ACDF"/>
@@ -30,271 +26,237 @@
     </linearGradient>
     <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%"   stop-color="#F6B40E" stop-opacity="0.9"/>
-      <stop offset="50%"  stop-color="#F6B40E" stop-opacity="0.4"/>
+      <stop offset="60%"  stop-color="#F6B40E" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#F6B40E" stop-opacity="0"/>
     </radialGradient>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="softGlow">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="bigBlur"><feGaussianBlur stdDeviation="25"/></filter>
-    <filter id="starGlow">
-      <feGaussianBlur stdDeviation="1.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="windGlow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="heartGlow">
-      <feGaussianBlur stdDeviation="6"/>
+    <filter id="hglow">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <!-- CSS Animations for wind leaves and Dulce -->
-  <style>
-    /* Wind leaves */
-    .leaf1 { animation: flyLeaf1 7s linear infinite; }
-    .leaf2 { animation: flyLeaf2 9s linear 1.5s infinite; }
-    .leaf3 { animation: flyLeaf3 6s linear 3s infinite; }
-    .leaf4 { animation: flyLeaf4 11s linear 0.5s infinite; }
-    .leaf5 { animation: flyLeaf5 8s linear 4s infinite; }
-    @keyframes flyLeaf1 {
-      from { transform: translate(-30px, 95px) rotate(0deg);   opacity:0; }
-      5%   { opacity: 1; }
-      95%  { opacity: 1; }
-      to   { transform: translate(940px, 75px) rotate(540deg); opacity:0; }
-    }
-    @keyframes flyLeaf2 {
-      from { transform: translate(-30px, 120px) rotate(30deg);  opacity:0; }
-      5%   { opacity: 1; }
-      95%  { opacity: 1; }
-      to   { transform: translate(940px, 100px) rotate(690deg); opacity:0; }
-    }
-    @keyframes flyLeaf3 {
-      from { transform: translate(-30px, 75px) rotate(-20deg);  opacity:0; }
-      5%   { opacity: 1; }
-      95%  { opacity: 1; }
-      to   { transform: translate(940px, 60px) rotate(420deg);  opacity:0; }
-    }
-    @keyframes flyLeaf4 {
-      from { transform: translate(-30px, 108px) rotate(15deg);  opacity:0; }
-      5%   { opacity: 1; }
-      95%  { opacity: 1; }
-      to   { transform: translate(940px, 88px) rotate(780deg);  opacity:0; }
-    }
-    @keyframes flyLeaf5 {
-      from { transform: translate(-30px, 135px) rotate(-10deg); opacity:0; }
-      5%   { opacity: 1; }
-      92%  { opacity: 1; }
-      to   { transform: translate(940px, 115px) rotate(600deg); opacity:0; }
-    }
-    /* Dulce on heart — being blown by wind */
-    .dulce-group {
-      animation: dulceFly 12s ease-in-out infinite;
-    }
-    @keyframes dulceFly {
-      0%   { transform: translate(-80px, 85px)  rotate(-6deg); opacity: 0; }
-      5%   { opacity: 1; }
-      30%  { transform: translate(280px, 72px)  rotate(4deg); }
-      50%  { transform: translate(480px, 80px)  rotate(-5deg); }
-      75%  { transform: translate(700px, 68px)  rotate(6deg); }
-      95%  { opacity: 1; }
-      100% { transform: translate(980px, 78px)  rotate(-4deg); opacity: 0; }
-    }
-    /* Wind streaks */
-    .wind1 { animation: dash1 2.5s linear infinite; stroke-dasharray: 80 40; }
-    .wind2 { animation: dash2 3.0s linear infinite; stroke-dasharray: 55 30; }
-    .wind3 { animation: dash3 2.0s linear infinite; stroke-dasharray: 100 50; }
-    .wind4 { animation: dash4 3.5s linear infinite; stroke-dasharray: 65 35; }
-    .wind5 { animation: dash5 2.2s linear infinite; stroke-dasharray: 90 45; }
-    .wind6 { animation: dash6 2.8s linear infinite; stroke-dasharray: 45 25; }
-    @keyframes dash1 { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -120; } }
-    @keyframes dash2 { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -85; } }
-    @keyframes dash3 { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -150; } }
-    @keyframes dash4 { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -100; } }
-    @keyframes dash5 { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -135; } }
-    @keyframes dash6 { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -70; } }
-  </style>
-
-  <!-- Sky -->
+  <!-- ── SKY ── -->
   <rect width="900" height="200" fill="url(#sky)"/>
-  <rect x="0" y="90" width="900" height="110" fill="url(#horizonGlow)" opacity="0.6"/>
+  <rect x="0" y="95" width="900" height="105" fill="#74ACDF" opacity="0.12"/>
 
-  <!-- Stars -->
-  <g filter="url(#starGlow)">
-    <circle cx="760" cy="22" r="2.2" fill="white" opacity="0.95"><animate attributeName="opacity" values="0.95;0.5;0.95" dur="3.5s" repeatCount="indefinite"/></circle>
-    <circle cx="760" cy="50" r="2.8" fill="white" opacity="1"><animate attributeName="opacity" values="1;0.6;1" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="745" cy="36" r="2.0" fill="white" opacity="0.9"><animate attributeName="opacity" values="0.9;0.4;0.9" dur="3.1s" begin="0.5s" repeatCount="indefinite"/></circle>
-    <circle cx="775" cy="36" r="2.5" fill="white" opacity="1"><animate attributeName="opacity" values="1;0.5;1" dur="2.5s" begin="0.3s" repeatCount="indefinite"/></circle>
-    <circle cx="780" cy="28" r="1.3" fill="white" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="4s" begin="1s" repeatCount="indefinite"/></circle>
-    <text x="795" y="40" font-family="'Segoe UI', sans-serif" font-size="8" fill="#74ACDF" opacity="0.7">Cruz del Sur</text>
-  </g>
-  <circle cx="30"  cy="12"  r="1.0" fill="white" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.3s" repeatCount="indefinite"/></circle>
-  <circle cx="85"  cy="28"  r="1.2" fill="white" opacity="0.8"><animate attributeName="opacity" values="0.8;0.3;0.8" dur="3.1s" begin="0.4s" repeatCount="indefinite"/></circle>
-  <circle cx="140" cy="15"  r="1.3" fill="#ffe8c0" opacity="0.9"><animate attributeName="opacity" values="0.9;0.4;0.9" dur="1.9s" begin="0.7s" repeatCount="indefinite"/></circle>
-  <circle cx="200" cy="35"  r="1.0" fill="white" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.5s" begin="0.2s" repeatCount="indefinite"/></circle>
-  <circle cx="310" cy="40"  r="0.9" fill="white" opacity="0.6"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.8s" begin="0.6s" repeatCount="indefinite"/></circle>
-  <circle cx="420" cy="30"  r="1.4" fill="white" opacity="0.9"><animate attributeName="opacity" values="0.9;0.4;0.9" dur="1.7s" begin="1.5s" repeatCount="indefinite"/></circle>
-  <circle cx="560" cy="38"  r="1.2" fill="#ffe8c0" opacity="0.8"><animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.4s" begin="0.8s" repeatCount="indefinite"/></circle>
-  <circle cx="845" cy="18"  r="1.0" fill="white" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></circle>
-  <circle cx="875" cy="40"  r="1.4" fill="#d0e8ff" opacity="0.85"><animate attributeName="opacity" values="0.85;0.3;0.85" dur="3.4s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <!-- ── STARS ── -->
+  <!-- Cruz del Sur -->
+  <circle cx="762" cy="22" r="2.2" fill="white"><animate attributeName="opacity" values="1;0.4;1" dur="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="762" cy="50" r="2.8" fill="white"><animate attributeName="opacity" values="1;0.5;1" dur="2.8s" repeatCount="indefinite"/></circle>
+  <circle cx="747" cy="36" r="2.0" fill="white"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="3.1s" begin="0.5s" repeatCount="indefinite"/></circle>
+  <circle cx="777" cy="36" r="2.5" fill="white"><animate attributeName="opacity" values="1;0.5;1" dur="2.5s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <circle cx="782" cy="27" r="1.2" fill="white"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="4s" begin="1s" repeatCount="indefinite"/></circle>
+  <text x="795" y="40" font-family="sans-serif" font-size="8" fill="#74ACDF" opacity="0.8">Cruz del Sur</text>
+  <!-- Scattered stars -->
+  <circle cx="30"  cy="12" r="1.0" fill="white"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.3s" repeatCount="indefinite"/></circle>
+  <circle cx="85"  cy="28" r="1.2" fill="white"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.1s" begin="0.4s" repeatCount="indefinite"/></circle>
+  <circle cx="140" cy="15" r="1.3" fill="#ffe8c0"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="1.9s" begin="0.7s" repeatCount="indefinite"/></circle>
+  <circle cx="200" cy="35" r="1.0" fill="white"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.5s" begin="0.2s" repeatCount="indefinite"/></circle>
+  <circle cx="310" cy="40" r="0.9" fill="white"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+  <circle cx="420" cy="30" r="1.4" fill="white"><animate attributeName="opacity" values="0.9;0.4;0.9" dur="1.7s" begin="1.5s" repeatCount="indefinite"/></circle>
+  <circle cx="560" cy="20" r="1.2" fill="#ffe8c0"><animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+  <circle cx="670" cy="35" r="1.1" fill="white"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.9s" begin="1.1s" repeatCount="indefinite"/></circle>
+  <circle cx="850" cy="18" r="1.0" fill="white"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></circle>
+  <circle cx="880" cy="42" r="1.4" fill="#d0e8ff"><animate attributeName="opacity" values="0.85;0.3;0.85" dur="3.4s" begin="0.3s" repeatCount="indefinite"/></circle>
 
-  <!-- Sol de Mayo -->
-  <ellipse cx="450" cy="105" rx="55" ry="35" fill="url(#sunGlow)" opacity="0.5">
-    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+  <!-- ── SOL DE MAYO ── -->
+  <ellipse cx="450" cy="104" rx="55" ry="32" fill="url(#sunGlow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
   </ellipse>
-  <circle cx="450" cy="100" r="14" fill="#F6B40E" opacity="0.85" filter="url(#softGlow)">
-    <animate attributeName="opacity" values="0.75;1;0.75" dur="5s" repeatCount="indefinite"/>
+  <circle cx="450" cy="100" r="14" fill="#F6B40E" opacity="0.9" filter="url(#softGlow)">
+    <animate attributeName="r" values="13;15;13" dur="5s" repeatCount="indefinite"/>
   </circle>
-  <g transform="translate(450,100)" opacity="0.75" filter="url(#glow)">
-    <line x1="0" y1="-20" x2="0" y2="-28" stroke="#F6B40E" stroke-width="1.5"/>
-    <line x1="0" y1="20"  x2="0" y2="28"  stroke="#F6B40E" stroke-width="1.5"/>
-    <line x1="-20" y1="0" x2="-28" y2="0" stroke="#F6B40E" stroke-width="1.5"/>
-    <line x1="20" y1="0"  x2="28" y2="0"  stroke="#F6B40E" stroke-width="1.5"/>
-    <line x1="-14" y1="-14" x2="-20" y2="-20" stroke="#F6B40E" stroke-width="1.2"/>
-    <line x1="14"  y1="-14" x2="20"  y2="-20" stroke="#F6B40E" stroke-width="1.2"/>
-    <line x1="-14" y1="14"  x2="-20" y2="20"  stroke="#F6B40E" stroke-width="1.2"/>
-    <line x1="14"  y1="14"  x2="20"  y2="20"  stroke="#F6B40E" stroke-width="1.2"/>
-    <line x1="-6" y1="-21" x2="-9"  y2="-29" stroke="#F6B40E" stroke-width="1.0"/>
-    <line x1="6"  y1="-21" x2="9"   y2="-29" stroke="#F6B40E" stroke-width="1.0"/>
-    <line x1="-21" y1="-6" x2="-29" y2="-9"  stroke="#F6B40E" stroke-width="1.0"/>
-    <line x1="-21" y1="6"  x2="-29" y2="9"   stroke="#F6B40E" stroke-width="1.0"/>
-    <line x1="21"  y1="-6" x2="29"  y2="-9"  stroke="#F6B40E" stroke-width="1.0"/>
-    <line x1="21"  y1="6"  x2="29"  y2="9"   stroke="#F6B40E" stroke-width="1.0"/>
-    <line x1="-6"  y1="21" x2="-9"  y2="29"  stroke="#F6B40E" stroke-width="1.0"/>
-    <line x1="6"   y1="21" x2="9"   y2="29"  stroke="#F6B40E" stroke-width="1.0"/>
+  <g transform="translate(450,100)" opacity="0.85" filter="url(#glow)">
+    <line x1="0" y1="-21" x2="0" y2="-29"   stroke="#F6B40E" stroke-width="1.8"/>
+    <line x1="0" y1="21"  x2="0" y2="29"    stroke="#F6B40E" stroke-width="1.8"/>
+    <line x1="-21" y1="0" x2="-29" y2="0"   stroke="#F6B40E" stroke-width="1.8"/>
+    <line x1="21"  y1="0" x2="29"  y2="0"   stroke="#F6B40E" stroke-width="1.8"/>
+    <line x1="-15" y1="-15" x2="-21" y2="-21" stroke="#F6B40E" stroke-width="1.3"/>
+    <line x1="15"  y1="-15" x2="21"  y2="-21" stroke="#F6B40E" stroke-width="1.3"/>
+    <line x1="-15" y1="15"  x2="-21" y2="21"  stroke="#F6B40E" stroke-width="1.3"/>
+    <line x1="15"  y1="15"  x2="21"  y2="21"  stroke="#F6B40E" stroke-width="1.3"/>
+    <line x1="-6"  y1="-22" x2="-9"  y2="-30" stroke="#F6B40E" stroke-width="1.0"/>
+    <line x1="6"   y1="-22" x2="9"   y2="-30" stroke="#F6B40E" stroke-width="1.0"/>
+    <line x1="-22" y1="-6"  x2="-30" y2="-9"  stroke="#F6B40E" stroke-width="1.0"/>
+    <line x1="-22" y1="6"   x2="-30" y2="9"   stroke="#F6B40E" stroke-width="1.0"/>
+    <line x1="22"  y1="-6"  x2="30"  y2="-9"  stroke="#F6B40E" stroke-width="1.0"/>
+    <line x1="22"  y1="6"   x2="30"  y2="9"   stroke="#F6B40E" stroke-width="1.0"/>
+    <line x1="-6"  y1="22"  x2="-9"  y2="30"  stroke="#F6B40E" stroke-width="1.0"/>
+    <line x1="6"   y1="22"  x2="9"   y2="30"  stroke="#F6B40E" stroke-width="1.0"/>
   </g>
 
-  <!-- Mountains -->
+  <!-- ── MOUNTAINS ── -->
   <polygon points="0,140 50,95 80,110 120,80 160,105 200,72 240,98 280,65 320,90 360,68 395,88 430,75 455,100 470,78 500,95 540,70 580,92 620,65 660,90 700,72 740,92 780,68 820,88 860,72 900,90 900,140" fill="url(#mtnFar)"/>
-  <polygon points="120,80 130,88 110,88" fill="white" opacity="0.75"/>
-  <polygon points="200,72 212,82 188,82" fill="white" opacity="0.75"/>
-  <polygon points="280,65 292,77 268,77" fill="white" opacity="0.8"/>
-  <polygon points="360,68 372,79 348,79" fill="white" opacity="0.75"/>
-  <polygon points="540,70 552,80 528,80" fill="white" opacity="0.8"/>
-  <polygon points="620,65 632,76 608,76" fill="white" opacity="0.8"/>
-  <polygon points="780,68 792,79 768,79" fill="white" opacity="0.75"/>
+  <!-- Snow caps -->
+  <polygon points="120,80 130,88 110,88" fill="white" opacity="0.8"/>
+  <polygon points="200,72 212,82 188,82" fill="white" opacity="0.8"/>
+  <polygon points="280,65 293,77 267,77" fill="white" opacity="0.85"/>
+  <polygon points="360,68 373,79 347,79" fill="white" opacity="0.8"/>
+  <polygon points="540,70 554,81 526,81" fill="white" opacity="0.85"/>
+  <polygon points="620,65 634,76 606,76" fill="white" opacity="0.85"/>
+  <polygon points="780,68 793,79 767,79" fill="white" opacity="0.8"/>
   <polygon points="0,150 40,120 90,135 130,110 170,128 210,105 250,122 290,108 335,125 375,112 415,128 450,115 480,130 520,110 560,127 600,112 640,128 680,108 720,125 760,112 800,130 840,115 880,130 900,125 900,150" fill="url(#mtnMid)"/>
   <polygon points="0,170 30,158 70,162 110,155 150,163 200,152 250,160 300,154 350,162 400,155 450,163 500,155 550,162 600,154 650,163 700,155 750,162 800,154 850,162 900,158 900,170" fill="url(#mtnNear)"/>
   <rect x="0" y="168" width="900" height="32" fill="#080e1a"/>
-  <g fill="#0e1820" opacity="0.8">
-    <polygon points="10,168 14,158 18,168"/><polygon points="45,168 49,155 53,168"/>
-    <polygon points="100,168 104,162 108,168"/><polygon points="180,168 184,156 188,168"/>
-    <polygon points="260,168 264,160 268,168"/><polygon points="340,168 344,157 348,168"/>
-    <polygon points="530,168 534,155 538,168"/><polygon points="720,168 724,157 728,168"/>
-    <polygon points="870,168 874,156 878,168"/>
+  <g fill="#0f1c2a" opacity="0.9">
+    <polygon points="10,168 14,157 18,168"/><polygon points="45,168 49,154 53,168"/>
+    <polygon points="100,168 104,161 108,168"/><polygon points="180,168 184,155 188,168"/>
+    <polygon points="260,168 264,159 268,168"/><polygon points="340,168 344,156 348,168"/>
+    <polygon points="530,168 534,154 538,168"/><polygon points="720,168 724,156 728,168"/>
+    <polygon points="870,168 874,155 878,168"/>
   </g>
 
-  <!-- Condor -->
-  <g transform="translate(160, 62)" opacity="0.85">
-    <ellipse cx="0" cy="0" rx="12" ry="5" fill="#1a1a2e"/>
-    <path d="M -4,-2 C -15,-15 -35,-10 -50,-5 C -38,-8 -20,-4 -4,2 Z" fill="#1a1a2e"/>
-    <path d="M 4,-2 C 15,-15 35,-10 50,-5 C 38,-8 20,-4 4,2 Z" fill="#1a1a2e"/>
-    <ellipse cx="10" cy="-3" rx="5" ry="4" fill="#1a1a2e"/>
-    <animate attributeName="transform" values="translate(160,62);translate(165,58);translate(160,62)" dur="6s" repeatCount="indefinite" additive="sum"/>
+  <!-- ══════════════════════════════════════════ -->
+  <!--    💨 VIENTO PATAGÓNICO — SMIL nativo     -->
+  <!-- ══════════════════════════════════════════ -->
+  <path d="M 0,62 Q 200,54 450,65 Q 700,76 900,60" fill="none" stroke="#a0c8ff" stroke-width="2.5" opacity="0.28" stroke-dasharray="75,40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-115" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 0,78 Q 250,68 500,80 Q 750,92 900,74" fill="none" stroke="#74ACDF" stroke-width="2.0" opacity="0.22" stroke-dasharray="55,35">
+    <animate attributeName="stroke-dashoffset" from="0" to="-90" dur="3.0s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 0,50 Q 180,42 380,52 Q 600,63 900,47" fill="none" stroke="#c0e0ff" stroke-width="3.0" opacity="0.18" stroke-dasharray="90,45">
+    <animate attributeName="stroke-dashoffset" from="0" to="-135" dur="2.0s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 0,92 Q 300,83 550,95 Q 750,105 900,88" fill="none" stroke="#74ACDF" stroke-width="1.6" opacity="0.18" stroke-dasharray="60,38">
+    <animate attributeName="stroke-dashoffset" from="0" to="-98" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 0,110 Q 200,102 450,114 Q 700,124 900,108" fill="none" stroke="#a0c8ff" stroke-width="1.8" opacity="0.15" stroke-dasharray="80,42">
+    <animate attributeName="stroke-dashoffset" from="0" to="-122" dur="2.2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--   🍃 HOJAS VOLANDO — animateMotion SMIL   -->
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Leaf 1 – green, y≈90 -->
+  <g>
+    <animateMotion path="M -30,90 C 200,75 600,100 950,82" dur="7s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.06;0.5;0.94;1" dur="7s" repeatCount="indefinite" begin="0s"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="540" dur="7s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="9" ry="5" fill="#4caf50"/>
+      <line x1="-7" y1="0" x2="7" y2="0" stroke="#2e7d32" stroke-width="0.9"/>
+    </g>
+  </g>
+  <!-- Leaf 2 – orange, y≈115 -->
+  <g>
+    <animateMotion path="M -30,115 C 180,102 550,125 950,108" dur="9s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.05;0.5;0.95;1" dur="9s" repeatCount="indefinite" begin="1.5s"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="30" to="690" dur="9s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="11" ry="5" fill="#ff8f00"/>
+      <line x1="-9" y1="0" x2="9" y2="0" stroke="#e65100" stroke-width="0.9"/>
+    </g>
+  </g>
+  <!-- Leaf 3 – yellow-green, y≈72 -->
+  <g>
+    <animateMotion path="M -30,72 C 250,60 620,82 950,65" dur="6s" repeatCount="indefinite" begin="3.0s"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.07;0.5;0.93;1" dur="6s" repeatCount="indefinite" begin="3.0s"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="-20" to="420" dur="6s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="8" ry="4" fill="#aed581"/>
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#558b2f" stroke-width="0.8"/>
+    </g>
+  </g>
+  <!-- Leaf 4 – red-brown, y≈105 -->
+  <g>
+    <animateMotion path="M -30,105 C 280,92 650,112 950,96" dur="11s" repeatCount="indefinite" begin="0.5s"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.04;0.5;0.96;1" dur="11s" repeatCount="indefinite" begin="0.5s"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="15" to="795" dur="11s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="10" ry="4.5" fill="#bf360c"/>
+      <line x1="-8" y1="0" x2="8" y2="0" stroke="#7f0000" stroke-width="0.8"/>
+    </g>
+  </g>
+  <!-- Leaf 5 – gold, y≈130 -->
+  <g>
+    <animateMotion path="M -30,130 C 220,118 620,138 950,122" dur="8s" repeatCount="indefinite" begin="4.0s"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.06;0.5;0.94;1" dur="8s" repeatCount="indefinite" begin="4.0s"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="-35" to="565" dur="8s" repeatCount="indefinite"/>
+      <ellipse cx="0" cy="0" rx="9" ry="4" fill="#fdd835"/>
+      <line x1="-7" y1="0" x2="7" y2="0" stroke="#f9a825" stroke-width="0.8"/>
+    </g>
   </g>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!--       VIENTO PATAGÓNICO FUERTE 💨           -->
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- Wind streaks — wavy horizontal paths across the sky -->
-  <path class="wind1" d="M 0,62 Q 150,55 300,65 Q 500,75 650,60 Q 800,50 900,63"
-        fill="none" stroke="#a0c8ff" stroke-width="2.2" opacity="0.30" filter="url(#windGlow)"/>
-  <path class="wind2" d="M 0,78 Q 200,70 400,82 Q 600,92 800,74 Q 870,68 900,77"
-        fill="none" stroke="#74ACDF" stroke-width="1.8" opacity="0.25"/>
-  <path class="wind3" d="M 0,50 Q 100,44 250,54 Q 450,65 700,48 Q 830,40 900,52"
-        fill="none" stroke="#c0e0ff" stroke-width="2.8" opacity="0.22" filter="url(#windGlow)"/>
-  <path class="wind4" d="M 0,92 Q 250,84 450,96 Q 650,106 850,88 Q 880,85 900,90"
-        fill="none" stroke="#74ACDF" stroke-width="1.5" opacity="0.20"/>
-  <path class="wind5" d="M 0,108 Q 180,100 380,112 Q 560,122 750,106 Q 840,98 900,108"
-        fill="none" stroke="#a0c8ff" stroke-width="2.0" opacity="0.18" filter="url(#windGlow)"/>
-  <path class="wind6" d="M 0,118 Q 300,110 500,122 Q 700,132 900,115"
-        fill="none" stroke="#74ACDF" stroke-width="1.2" opacity="0.15"/>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!--        HOJAS VOLANDO EN EL VIENTO 🍃        -->
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- Leaf 1 — green -->
-  <g class="leaf1">
-    <ellipse cx="0" cy="0" rx="9" ry="5" fill="#4caf50" opacity="0.9" transform="rotate(30)"/>
-    <line x1="0" y1="-4" x2="0" y2="4" stroke="#2e7d32" stroke-width="0.8"/>
-  </g>
-  <!-- Leaf 2 — autumn orange -->
-  <g class="leaf2">
-    <ellipse cx="0" cy="0" rx="11" ry="5" fill="#ff8f00" opacity="0.9" transform="rotate(-15)"/>
-    <line x1="-8" y1="0" x2="9" y2="0" stroke="#e65100" stroke-width="0.8"/>
-  </g>
-  <!-- Leaf 3 — yellow-green -->
-  <g class="leaf3">
-    <ellipse cx="0" cy="0" rx="8" ry="4" fill="#aed581" opacity="0.9" transform="rotate(45)"/>
-    <line x1="0" y1="-3" x2="0" y2="3" stroke="#558b2f" stroke-width="0.7"/>
-  </g>
-  <!-- Leaf 4 — red-brown -->
-  <g class="leaf4">
-    <ellipse cx="0" cy="0" rx="10" ry="4.5" fill="#bf360c" opacity="0.85" transform="rotate(20)"/>
-    <line x1="-7" y1="0" x2="8" y2="0" stroke="#7f0000" stroke-width="0.7"/>
-  </g>
-  <!-- Leaf 5 — golden -->
-  <g class="leaf5">
-    <ellipse cx="0" cy="0" rx="9" ry="4" fill="#fdd835" opacity="0.9" transform="rotate(-35)"/>
-    <line x1="0" y1="-3" x2="0" y2="3" stroke="#f9a825" stroke-width="0.7"/>
-  </g>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!--     🐾 DULCE REINA EN UN CORAZÓN 🐾         -->
-  <!-- ═══════════════════════════════════════════ -->
-  <g class="dulce-group">
-
-    <!-- Heart glow shadow -->
-    <ellipse cx="18" cy="30" rx="20" ry="14" fill="#f44336" opacity="0.3" filter="url(#heartGlow)"/>
-
-    <!-- Heart shape -->
-    <path d="M 18,44 C 18,44 -4,28 -4,18 C -4,10 2,5 10,7 C 14,8 18,12 18,12
-             C 18,12 22,8 26,7 C 34,5 40,10 40,18 C 40,28 18,44 18,44 Z"
-          fill="#f44336" stroke="#ff8a80" stroke-width="1.2"/>
-    <!-- Heart shine -->
-    <ellipse cx="11" cy="14" rx="5" ry="3" fill="white" opacity="0.35" transform="rotate(-20,11,14)"/>
-
-    <!-- DOG BODY (Dulce - tan/golden dog) -->
+  <!-- ══════════════════════════════════════════ -->
+  <!--   🦅 CÓNDOR ANDINO VOLANDO — alto contraste -->
+  <!-- ══════════════════════════════════════════ -->
+  <g filter="url(#glow)">
+    <animateMotion path="M -160,55 Q 100,38 300,48 Q 550,60 750,44 Q 900,35 1060,44" dur="20s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.04;0.5;0.96;1" dur="20s" repeatCount="indefinite" begin="0s"/>
     <!-- Body -->
+    <ellipse cx="0" cy="0" rx="16" ry="6" fill="#b0c8d8" stroke="white" stroke-width="0.5"/>
+    <!-- Left wing -->
+    <path d="M -5,-2 C -22,-20 -52,-13 -75,-6 C -55,-10 -28,-4 -5,2 Z" fill="#8aabbc" stroke="white" stroke-width="0.5"/>
+    <!-- Right wing -->
+    <path d="M 5,-2 C 22,-20 52,-13 75,-6 C 55,-10 28,-4 5,2 Z" fill="#8aabbc" stroke="white" stroke-width="0.5"/>
+    <!-- White wing patches (distinctive condor marking) -->
+    <ellipse cx="-35" cy="-7" rx="20" ry="5"  fill="white" opacity="0.8" transform="rotate(-8,-35,-7)"/>
+    <ellipse cx="35"  cy="-7" rx="20" ry="5"  fill="white" opacity="0.8" transform="rotate(8,35,-7)"/>
+    <!-- Head -->
+    <circle cx="18" cy="-3" r="7" fill="#c0d5e0" stroke="white" stroke-width="0.4"/>
+    <!-- White ruff collar (characteristic of Andean condor) -->
+    <ellipse cx="12" cy="2" rx="8" ry="4" fill="white" opacity="0.85"/>
+    <!-- Eye -->
+    <circle cx="20" cy="-4" r="1.5" fill="#1a1a2e"/>
+    <circle cx="20.8" cy="-4.8" r="0.5" fill="white"/>
+  </g>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--   🐾 DULCE REINA EN CORAZÓN — animateMotion -->
+  <!-- ══════════════════════════════════════════ -->
+  <g>
+    <animateMotion path="M -90,88 C 150,70 400,82 680,68 C 800,62 900,70 1000,72" dur="14s" repeatCount="indefinite" begin="2s"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.05;0.5;0.95;1" dur="14s" repeatCount="indefinite" begin="2s"/>
+
+    <!-- Heart glow -->
+    <ellipse cx="18" cy="30" rx="22" ry="15" fill="#f44336" opacity="0.25" filter="url(#bigBlur)"/>
+    <!-- Heart -->
+    <path d="M 18,44 C 18,44 -5,27 -5,17 C -5,9 2,4 10,6 C 14,7 18,11 18,11 C 18,11 22,7 26,6 C 34,4 41,9 41,17 C 41,27 18,44 18,44 Z" fill="#f44336" stroke="#ff8a80" stroke-width="1.2"/>
+    <ellipse cx="10" cy="13" rx="5" ry="3" fill="white" opacity="0.35" transform="rotate(-25,10,13)"/>
+
+    <!-- Dog body (Dulce) -->
     <ellipse cx="18" cy="8" rx="16" ry="11" fill="#c8a26a"/>
     <!-- Head -->
-    <circle cx="30" cy="-2" r="10" fill="#d4a96a"/>
-    <!-- Left ear (floppy) -->
-    <ellipse cx="22" cy="-9" rx="5" ry="8" fill="#a07840" transform="rotate(-20,22,-9)"/>
-    <!-- Right ear (floppy) -->
-    <ellipse cx="30" cy="-11" rx="4" ry="7" fill="#a07840" transform="rotate(15,30,-11)"/>
+    <circle cx="30" cy="-2" r="10" fill="#d4aa70"/>
+    <!-- Ears -->
+    <ellipse cx="22" cy="-10" rx="5" ry="8" fill="#a07846" transform="rotate(-20,22,-10)"/>
+    <ellipse cx="31" cy="-12" rx="4" ry="7" fill="#a07846" transform="rotate(15,31,-12)"/>
     <!-- Eyes -->
     <circle cx="27" cy="-4" r="2.5" fill="#2c1a0e"/>
     <circle cx="34" cy="-3" r="2.5" fill="#2c1a0e"/>
-    <!-- Eye shine -->
-    <circle cx="28" cy="-5" r="0.9" fill="white"/>
-    <circle cx="35" cy="-4" r="0.9" fill="white"/>
+    <circle cx="28" cy="-5"  r="0.9" fill="white"/>
+    <circle cx="35" cy="-4"  r="0.9" fill="white"/>
     <!-- Nose -->
     <ellipse cx="30.5" cy="1" rx="3" ry="2" fill="#2c1a0e"/>
     <!-- Happy mouth -->
     <path d="M 27,4 Q 30.5,7 34,4" fill="none" stroke="#2c1a0e" stroke-width="1.2" stroke-linecap="round"/>
-    <!-- Tongue out -->
-    <ellipse cx="30.5" cy="6.5" rx="3" ry="2.5" fill="#ff8a80"/>
-    <!-- Tail (curled up) -->
-    <path d="M 2,2 Q -8,-4 -6,-12 Q -4,-16 0,-14" fill="none" stroke="#a07840" stroke-width="3.5" stroke-linecap="round"/>
-    <!-- Front paw -->
-    <ellipse cx="8" cy="17" rx="5" ry="3.5" fill="#c8a26a"/>
+    <!-- Tongue -->
+    <ellipse cx="30.5" cy="7" rx="3" ry="2.5" fill="#ff8a80"/>
+    <!-- Tail -->
+    <path d="M 2,2 Q -9,-5 -7,-13 Q -5,-17 -1,-15" fill="none" stroke="#a07846" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Paws on heart -->
+    <ellipse cx="8"  cy="18" rx="5" ry="3.5" fill="#c8a26a"/>
     <ellipse cx="26" cy="18" rx="5" ry="3.5" fill="#c8a26a"/>
-    <!-- Blush cheeks (cute!) -->
-    <ellipse cx="24" cy="1" rx="4" ry="2.5" fill="#ffb3b3" opacity="0.6"/>
-    <ellipse cx="37" cy="1" rx="4" ry="2.5" fill="#ffb3b3" opacity="0.6"/>
-    <!-- Small wind lines near the dog -->
-    <path d="M -18,-5 Q -10,-8 -5,-4" fill="none" stroke="#a0c8ff" stroke-width="1.2" opacity="0.6"/>
-    <path d="M -20,2 Q -12,-1 -7,3" fill="none" stroke="#a0c8ff" stroke-width="1.0" opacity="0.5"/>
+    <!-- Blush -->
+    <ellipse cx="24" cy="1" rx="4" ry="2.5" fill="#ffb3b3" opacity="0.65"/>
+    <ellipse cx="37" cy="1" rx="4" ry="2.5" fill="#ffb3b3" opacity="0.65"/>
+    <!-- Wind wisps near dog -->
+    <path d="M -20,-4 Q -11,-8 -5,-3" fill="none" stroke="#a0c8ff" stroke-width="1.3" opacity="0.7"/>
+    <path d="M -22,3 Q -13,0 -6,4"   fill="none" stroke="#a0c8ff" stroke-width="1.0" opacity="0.5"/>
   </g>
 
-  <!-- Text -->
+  <!-- ── TEXT ── -->
   <text x="450" y="152" text-anchor="middle"
         font-family="'Segoe UI', Ubuntu, sans-serif"
         font-size="22" font-weight="700"
@@ -307,10 +269,10 @@
     Tierra de dinosaurios, vientos libres y cielos infinitos  🦅
   </text>
 
-  <!-- Argentine flag borders -->
+  <!-- ── FLAG BORDERS ── -->
   <rect x="0" y="0"   width="900" height="3" fill="#74ACDF" opacity="0.7"/>
   <rect x="0" y="3"   width="900" height="2" fill="#ffffff" opacity="0.5"/>
-  <rect x="0" y="185" width="900" height="5"  fill="#74ACDF" opacity="0.5"/>
-  <rect x="0" y="190" width="900" height="5"  fill="#ffffff" opacity="0.4"/>
-  <rect x="0" y="195" width="900" height="5"  fill="#74ACDF" opacity="0.5"/>
+  <rect x="0" y="185" width="900" height="5" fill="#74ACDF" opacity="0.5"/>
+  <rect x="0" y="190" width="900" height="5" fill="#ffffff" opacity="0.4"/>
+  <rect x="0" y="195" width="900" height="5" fill="#74ACDF" opacity="0.5"/>
 </svg>
