@@ -258,6 +258,12 @@ Dashboard interactivo con widgets dinámicos, modo oscuro, notas sticky, reloj y
 
 <br/>
 
-*Made with ❤️ · Neuquen-Patagonia-Argentina · 2026*
+*Made with ❤️ · Neuquén · Patagonia · Argentina · 2026*
 
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="CARD/argentina-banner.svg" width="100%" alt="Neuquén - Patagonia - Argentina"/>
 </div>
