@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420"
+     role="img" aria-label="Sobre Mí — Hector Daniel Ayarachi Fuentes">
+  <title>Sobre Mí</title>
+
+  <defs>
+    <!-- Backgrounds -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0d1117"/>
+      <stop offset="50%"  stop-color="#0f1724"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#161b22" stop-opacity="0.97"/>
+      <stop offset="100%" stop-color="#1c2333" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="quoteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+    <linearGradient id="heroAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+
+    <!-- Glows -->
+    <filter id="purpleGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.48  0 0 0 0 0.40  0 0 0 0 0.97  0 0 0 0.6 0" result="c"/>
+      <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="blueGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.47  0 0 0 0 0.64  0 0 0 0 0.97  0 0 0 0.7 0" result="c"/>
+      <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="textGlow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Avatar circle clip -->
+    <clipPath id="avatarClip">
+      <circle cx="80" cy="76" r="40"/>
+    </clipPath>
+
+    <!-- Shimmer sweep -->
+    <linearGradient id="shimmer" x1="-100%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%"   stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#fff" stop-opacity="0.035"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        from="-1 0" to="1 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="860" height="420" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot grid -->
+  <g opacity="0.04" fill="#7aa2f7">
+    <circle cx="50"  cy="50"  r="1"/><circle cx="150" cy="50"  r="1"/><circle cx="250" cy="50"  r="1"/>
+    <circle cx="350" cy="50"  r="1"/><circle cx="450" cy="50"  r="1"/><circle cx="550" cy="50"  r="1"/>
+    <circle cx="650" cy="50"  r="1"/><circle cx="750" cy="50"  r="1"/><circle cx="850" cy="50"  r="1"/>
+    <circle cx="50"  cy="150" r="1"/><circle cx="150" cy="150" r="1"/><circle cx="250" cy="150" r="1"/>
+    <circle cx="350" cy="150" r="1"/><circle cx="450" cy="150" r="1"/><circle cx="550" cy="150" r="1"/>
+    <circle cx="650" cy="150" r="1"/><circle cx="750" cy="150" r="1"/><circle cx="850" cy="150" r="1"/>
+    <circle cx="50"  cy="250" r="1"/><circle cx="150" cy="250" r="1"/><circle cx="250" cy="250" r="1"/>
+    <circle cx="350" cy="250" r="1"/><circle cx="450" cy="250" r="1"/><circle cx="550" cy="250" r="1"/>
+    <circle cx="650" cy="250" r="1"/><circle cx="750" cy="250" r="1"/><circle cx="850" cy="250" r="1"/>
+    <circle cx="50"  cy="350" r="1"/><circle cx="150" cy="350" r="1"/><circle cx="250" cy="350" r="1"/>
+    <circle cx="350" cy="350" r="1"/><circle cx="450" cy="350" r="1"/><circle cx="550" cy="350" r="1"/>
+    <circle cx="650" cy="350" r="1"/><circle cx="750" cy="350" r="1"/><circle cx="850" cy="350" r="1"/>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HEADER — TITLE + AVATAR PLACEHOLDER                   -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- Avatar ring (animated rotation) -->
+  <circle cx="80" cy="76" r="44" fill="none" stroke="url(#quoteGrad)" stroke-width="2" opacity="0.8"
+          stroke-dasharray="8 4">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 80 76" to="360 80 76" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Avatar background -->
+  <circle cx="80" cy="76" r="40" fill="#1a2033"/>
+  <!-- Avatar emoji / icon -->
+  <text x="80" y="91" font-size="36" text-anchor="middle" font-family="'Segoe UI Emoji', sans-serif">👨‍💻</text>
+
+  <!-- Name -->
+  <text x="140" y="60" font-family="'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="700"
+        fill="#e6edf3" filter="url(#textGlow)" letter-spacing="0.3">Hector Daniel Ayarachi Fuentes</text>
+  <!-- Role badge -->
+  <rect x="140" y="68" width="170" height="20" rx="4" fill="#1c2333"/>
+  <rect x="140" y="68" width="170" height="20" rx="4" fill="none" stroke="url(#quoteGrad)" stroke-width="0.8" opacity="0.6"/>
+  <text x="225" y="82" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="600"
+        fill="#7aa2f7" text-anchor="middle" letter-spacing="1">⚡ DESARROLLADOR DE SOFTWARE</text>
+  <!-- Location -->
+  <text x="140" y="104" font-family="'Segoe UI', system-ui, sans-serif" font-size="11"
+        fill="#6e7681" letter-spacing="0.3">🌍 Neuquén · Patagonia · Argentina</text>
+
+  <!-- Right-side decorative line -->
+  <line x1="340" y1="30" x2="840" y2="30" stroke="url(#quoteGrad)" stroke-width="0.6" opacity="0.3"/>
+  <!-- Decorative top-right corner -->
+  <path d="M820,20 L840,20 L840,40" fill="none" stroke="url(#quoteGrad)" stroke-width="1.5" opacity="0.7"/>
+  <path d="M20,20 L20,40" fill="none" stroke="url(#quoteGrad)" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- QUOTE BAR                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="20" y="120" width="820" height="38" rx="8" fill="#0d1117" opacity="0.6"/>
+  <rect x="20" y="120" width="3"   height="38" rx="1.5" fill="url(#quoteGrad)"/>
+  <text x="40" y="131" font-family="'Segoe UI', system-ui, sans-serif" font-size="10"
+        fill="#7aa2f7" opacity="0.6" font-style="italic">❝</text>
+  <text x="54" y="133" font-family="'Georgia', serif" font-size="11" font-style="italic"
+        fill="#c9d1d9" opacity="0.85">El código es poesía escrita en lógica — y cada función bien diseñada es un verso perfecto.</text>
+  <text x="54" y="149" font-family="'Segoe UI', system-ui, sans-serif" font-size="9"
+        fill="#6e7681">Desarrollador de Software · Argentina · 2026</text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INFO CARDS — 2 columns                                -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- Card LEFT -->
+  <rect x="20" y="172" width="400" height="220" rx="10" fill="#000" opacity="0.35" filter="url(#softShadow)"/>
+  <rect x="20" y="172" width="400" height="220" rx="10" fill="url(#cardGrad)"/>
+  <rect x="20" y="172" width="400" height="220" rx="10" fill="url(#shimmer)"/>
+  <rect x="20" y="172" width="3"   height="220" rx="1.5" fill="url(#heroAccent)"/>
+  <rect x="20" y="172" width="400" height="1"   fill="url(#quoteGrad)" opacity="0.5"/>
+
+  <text x="40" y="195" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700"
+        fill="#7aa2f7" filter="url(#textGlow)" letter-spacing="0.5">💼 DATOS CLAVE</text>
+
+  <!-- Left card items -->
+  <g font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#c9d1d9">
+    <!-- Item 1 -->
+    <rect x="34" y="205" width="26" height="26" rx="5" fill="#1a2a3a"/>
+    <text x="47" y="222" text-anchor="middle" font-size="13">🎯</text>
+    <text x="70" y="214" font-size="10" fill="#7aa2f7" font-weight="600">Enfoque actual</text>
+    <text x="70" y="228" font-size="11" fill="#c9d1d9">Agentes IA y arquitecturas web modernas</text>
+
+    <!-- Item 2 -->
+    <rect x="34" y="243" width="26" height="26" rx="5" fill="#1a2a1a"/>
+    <text x="47" y="260" text-anchor="middle" font-size="13">🚀</text>
+    <text x="70" y="252" font-size="10" fill="#9ece6a" font-weight="600">Buscando colaborar en</text>
+    <text x="70" y="266" font-size="11" fill="#c9d1d9">Proyectos open-source desafiantes</text>
+
+    <!-- Item 3 -->
+    <rect x="34" y="281" width="26" height="26" rx="5" fill="#1a1a2a"/>
+    <text x="47" y="298" text-anchor="middle" font-size="13">🌱</text>
+    <text x="70" y="290" font-size="10" fill="#bb9af7" font-weight="600">Aprendiendo</text>
+    <text x="70" y="304" font-size="11" fill="#c9d1d9">LLMs · RAG · Deployment escalable</text>
+
+    <!-- Item 4 -->
+    <rect x="34" y="319" width="26" height="26" rx="5" fill="#1a1a1a"/>
+    <text x="47" y="336" text-anchor="middle" font-size="13">🌍</text>
+    <text x="70" y="328" font-size="10" fill="#73daca" font-weight="600">Ubicación</text>
+    <text x="70" y="342" font-size="11" fill="#c9d1d9">Neuquén · Patagonia · Argentina</text>
+
+    <!-- Item 5 -->
+    <rect x="34" y="357" width="26" height="26" rx="5" fill="#2a1a1a"/>
+    <text x="47" y="374" text-anchor="middle" font-size="13">⚡</text>
+    <text x="70" y="366" font-size="10" fill="#f7768e" font-weight="600">Fun fact</text>
+    <text x="70" y="380" font-size="11" fill="#c9d1d9">Mi mejor revisora de código tiene 4 patas 🐾</text>
+  </g>
+
+  <!-- Card RIGHT -->
+  <rect x="440" y="172" width="400" height="220" rx="10" fill="#000" opacity="0.35" filter="url(#softShadow)"/>
+  <rect x="440" y="172" width="400" height="220" rx="10" fill="url(#cardGrad)"/>
+  <rect x="440" y="172" width="400" height="220" rx="10" fill="url(#shimmer)"/>
+  <rect x="440" y="172" width="3"   height="220" rx="1.5" fill="url(#quoteGrad)"/>
+  <rect x="440" y="172" width="400" height="1"   fill="url(#quoteGrad)" opacity="0.5"/>
+
+  <text x="460" y="195" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700"
+        fill="#bb9af7" filter="url(#textGlow)" letter-spacing="0.5">🧭 SOBRE MÍ</text>
+
+  <!-- Right card items -->
+  <g font-family="'Segoe UI', system-ui, sans-serif" fill="#c9d1d9">
+    <!-- Item 1 -->
+    <rect x="454" y="205" width="26" height="26" rx="5" fill="#2a1a3a"/>
+    <text x="467" y="222" text-anchor="middle" font-size="13">💡</text>
+    <text x="490" y="214" font-size="10" fill="#bb9af7" font-weight="600">Intereses</text>
+    <text x="490" y="228" font-size="11" fill="#c9d1d9">Tech · IA · Diseño · Innovación</text>
+
+    <!-- Item 2 -->
+    <rect x="454" y="243" width="26" height="26" rx="5" fill="#1a2a2a"/>
+    <text x="467" y="260" text-anchor="middle" font-size="13">📫</text>
+    <text x="490" y="252" font-size="10" fill="#73daca" font-weight="600">Contacto directo</text>
+    <text x="490" y="266" font-size="11" fill="#7aa2f7">mp4o@hotmail.com</text>
+
+    <!-- Item 3 -->
+    <rect x="454" y="281" width="26" height="26" rx="5" fill="#1a2a1a"/>
+    <text x="467" y="298" text-anchor="middle" font-size="13">💬</text>
+    <text x="490" y="290" font-size="10" fill="#9ece6a" font-weight="600">Pregúntame sobre</text>
+    <text x="490" y="304" font-size="11" fill="#c9d1d9">Cualquier cosa tech 🤖</text>
+
+    <!-- Item 4 -->
+    <rect x="454" y="319" width="26" height="26" rx="5" fill="#2a2a1a"/>
+    <text x="467" y="336" text-anchor="middle" font-size="13">🤝</text>
+    <text x="490" y="328" font-size="10" fill="#e0af68" font-weight="600">Open a</text>
+    <text x="490" y="342" font-size="11" fill="#c9d1d9">Colaboraciones · Proyectos · Charlas</text>
+
+    <!-- Item 5 -->
+    <rect x="454" y="357" width="26" height="26" rx="5" fill="#1a1a2a"/>
+    <text x="467" y="374" text-anchor="middle" font-size="13">🧠</text>
+    <text x="490" y="366" font-size="10" fill="#7aa2f7" font-weight="600">Lema</text>
+    <text x="490" y="380" font-size="11" fill="#c9d1d9">Always be building. Always be learning.</text>
+  </g>
+
+  <!-- ── ANIMATED PARTICLE DOTS ── -->
+  <g opacity="0.45">
+    <circle cx="810" cy="180" r="2" fill="#7aa2f7">
+      <animate attributeName="cy" values="180;165;180" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4"  dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="838" cy="210" r="1.5" fill="#bb9af7">
+      <animate attributeName="cy" values="210;225;210" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="822" cy="340" r="2" fill="#9ece6a">
+      <animate attributeName="cy" values="340;355;340" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="843" cy="295" r="1.5" fill="#f7768e">
+      <animate attributeName="cy" values="295;280;295" dur="4.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Bottom corner decorations -->
+  <path d="M20,400 L20,412 L32,412" fill="none" stroke="url(#quoteGrad)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M840,400 L840,412 L828,412" fill="none" stroke="url(#quoteGrad)" stroke-width="1.5" opacity="0.5"/>
+
+</svg>

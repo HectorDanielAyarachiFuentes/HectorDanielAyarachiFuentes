@@ -31,30 +31,9 @@
 
 ## 👨‍💻 Sobre Mí
 
-> *"El código es poesía escrita en lógica — y cada función bien diseñada es un verso perfecto."*
-
-Soy un **Desarrollador de Software** de Argentina con un enfoque profundo en arquitecturas modernas y experiencias de usuario que realmente importan. En **2026**, mi misión es estar siempre un paso adelante: construyendo con IA, diseñando para personas y contribuyendo a un ecosistema open-source más fuerte.
-
-<table border="0" style="border: none;">
-<tr style="background: transparent;">
-<td width="50%" style="border: none; vertical-align: top;">
-
-🎯 **Enfoque actual:** Agentes IA y arquitecturas web modernas  
-🚀 **Buscando colaborar** en proyectos open-source desafiantes  
-🌱 **Aprendiendo:** LLMs, RAG y Deployment escalable  
-🌍 **Ubicación:** Argentina
-
-</td>
-<td width="50%" style="border: none; vertical-align: top;">
-
-💡 **Intereses:** Tech · IA · Diseño · Innovación  
-📫 **Contacto:** [mp4o@hotmail.com](mailto:mp4o@hotmail.com)  
-💬 **Pregúntame sobre:** Cualquier cosa tech  
-⚡ **Fun fact:** Mi mejor revisora de código tiene cuatro patas 🐾
-
-</td>
-</tr>
-</table>
+<div align="center">
+  <img src="CARD/about-me.svg" width="100%" alt="Sobre Mí — Hector Daniel Ayarachi Fuentes"/>
+</div>
 
 ---
 
