@@ -1,101 +1,229 @@
-<div id="header" align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="120" alt="Saludos GIF"/>
-  <h1 align="center">¡Hola! Soy Hector Daniel Ayarachi Fuentes 👋</h1>
-  <h3 align="center">Desarrollador de Software | Apasionado por la Tecnología y la Innovación</h3>
-  
-  <p align="center">
-    <!-- Social Badges -->
-    <a href="mailto:mp4o@hotmail.com">
-      <img src="https://img.shields.io/badge/Email-mp4o%40hotmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-    </a>
-    <a href="https://codepen.io/HectorDanielAyarachiFuentes" target="_blank">
-      <img src="https://img.shields.io/badge/CodePen-000000?style=for-the-badge&logo=codepen&logoColor=white" alt="CodePen" />
-    </a>
-    <a href="https://github.com/HectorDanielAyarachiFuentes">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    </a>
-  </p>
+<!-- ══════════════════════════════════════════ -->
+<!--              ANIMATED BANNER              -->
+<!-- ══════════════════════════════════════════ -->
+<div align="center">
+  <img src="CARD/banner.svg" width="100%" alt="Banner de Hector Daniel Ayarachi Fuentes"/>
+</div>
 
-  <br/>
-  
-  <a href="https://codepen.io/HectorDanielAyarachiFuentes" title="Visita mi perfil en CodePen" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/blob/main/Img/Dulce-flamenco.jpeg?raw=true" alt="Mi perra, Dulce Reina" width="180" style="border-radius: 50%; box-shadow: 0px 5px 15px rgba(0,0,0,0.2);"/>
-  </a>
+<!-- Animated typing -->
+<div align="center">
+  <img src="CARD/typing.svg" width="600" alt="Typing animation"/>
+</div>
+
+<br/>
+
+<!-- ══════════════════════════════════════════ -->
+<!--            QUICK CONNECT BADGES           -->
+<!-- ══════════════════════════════════════════ -->
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-%40HectorDanielAyarachiFuentes-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HectorDanielAyarachiFuentes)&nbsp;
+[![CodePen](https://img.shields.io/badge/CodePen-Mis%20Pens-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/HectorDanielAyarachiFuentes)&nbsp;
+[![Email](https://img.shields.io/badge/Email-mp4o%40hotmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mp4o@hotmail.com)
+
 </div>
 
 ---
 
-<br/>
+<!-- ══════════════════════════════════════════ -->
+<!--                ABOUT ME                   -->
+<!-- ══════════════════════════════════════════ -->
 
 ## 👨‍💻 Sobre Mí
 
-Soy un desarrollador con un gran interés en construir soluciones tecnológicas vanguardistas. En este **2026**, mi enfoque está en crear arquitecturas robustas y experiencias de usuario inmersivas, siempre adoptando las mejores prácticas y herramientas de vanguardia.
+> *"El código es poesía escrita en lógica — y cada función bien diseñada es un verso perfecto."*
 
-* 🌱 **Actualmente explorando:** Inteligencia Artificial, Agentes Autónomos y Desarrollo Web Moderno.
-* 🚀 **Colaboración:** Siempre abierto a contribuir en proyectos open-source desafiantes y con impacto positivo.
-* 💬 **Pregúntame sobre:** Cualquier tema tecnológico; ¡me encanta aprender y compartir conocimiento!
-* 📫 **Contacto directo:** [mp4o@hotmail.com](mailto:mp4o@hotmail.com)
+Soy un **Desarrollador de Software** de Argentina con un enfoque profundo en arquitecturas modernas y experiencias de usuario que realmente importan. En **2026**, mi misión es estar siempre un paso adelante: construyendo con IA, diseñando para personas y contribuyendo a un ecosistema open-source más fuerte.
 
-<br/>
+<table border="0" style="border: none;">
+<tr style="background: transparent;">
+<td width="50%" style="border: none; vertical-align: top;">
 
-## 🛠️ Stack Tecnológico
+🎯 **Enfoque actual:** Agentes IA y arquitecturas web modernas  
+🚀 **Buscando colaborar** en proyectos open-source desafiantes  
+🌱 **Aprendiendo:** LLMs, RAG y Deployment escalable  
+🌍 **Ubicación:** Argentina
 
-<p align="center">
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="java" width="50" height="50"/></a>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="python" width="50" height="50"/></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/></a>
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="50" height="50"/></a>
-  <a href="https://vuejs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="50" height="50"/></a>
-  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="50" height="50"/></a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="50" height="50"/></a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50"/></a>
+</td>
+<td width="50%" style="border: none; vertical-align: top;">
+
+💡 **Intereses:** Tech · IA · Diseño · Innovación  
+📫 **Contacto:** [mp4o@hotmail.com](mailto:mp4o@hotmail.com)  
+💬 **Pregúntame sobre:** Cualquier cosa tech  
+⚡ **Fun fact:** Mi mejor revisora de código tiene cuatro patas 🐾
+
+</td>
+</tr>
+</table>
+
+---
+
+<!-- ══════════════════════════════════════════ -->
+<!--              TECH STACK                   -->
+<!-- ══════════════════════════════════════════ -->
+
+## 🛠️ Arsenal Tecnológico
+
+### 🎨 Frontend & Diseño
+
+<p align="left">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://reactjs.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://vuejs.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="Vue.js" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://www.w3.org/html/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://www.w3schools.com/css/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://getbootstrap.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="42" height="42"/>
+  </a>
 </p>
 
-<br/>
+### ⚙️ Backend & Datos
 
-## 📊 Estadísticas de Desarrollo
+<p align="left">
+  <a href="https://www.python.org" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="Python" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://www.java.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="Java" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://nodejs.org" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://www.mysql.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="42" height="42"/>
+  </a>
+</p>
+
+### 🔧 Herramientas & DevOps
+
+<p align="left">
+  <a href="https://git-scm.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" alt="Git" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://github.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original-wordmark.svg" alt="GitHub" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://code.visualstudio.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original-wordmark.svg" alt="VS Code" width="42" height="42"/>
+  </a>&nbsp;
+  <a href="https://www.linux.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="42" height="42"/>
+  </a>
+</p>
+
+---
+
+<!-- ══════════════════════════════════════════ -->
+<!--           FEATURED PROJECTS               -->
+<!-- ══════════════════════════════════════════ -->
+
+## 🌟 Proyectos Destacados
+
+<table border="0" style="border-collapse: collapse; width: 100%;">
+<tr style="background: transparent;">
+
+<td width="50%" style="padding: 10px; border: none; vertical-align: top;">
+<div style="background: linear-gradient(135deg, #1a1b26, #16213e); border: 1px solid #2a2b3d; border-left: 4px solid #7aa2f7; border-radius: 8px; padding: 18px;">
+
+### 🚀 Proyecto Antigravity
+Editor de código inteligente personalizado con soporte de IA, TTS con resaltado de texto en tiempo real y un diseño previsualizador moderno.
+
+**Stack:** `JavaScript` · `VS Code Extension` · `Node.js`
+
+[![Ver Repo](https://img.shields.io/badge/Ver_Repo-7aa2f7?style=flat-square&logo=github)](https://github.com/HectorDanielAyarachiFuentes)
+
+</div>
+</td>
+
+<td width="50%" style="padding: 10px; border: none; vertical-align: top;">
+<div style="background: linear-gradient(135deg, #1a1b26, #16213e); border: 1px solid #2a2b3d; border-left: 4px solid #bb9af7; border-radius: 8px; padding: 18px;">
+
+### 💡 Web Dashboard
+Dashboard interactivo con widgets dinámicos, modo oscuro, notas sticky, reloj y pantallas personalizadas de bienvenida.
+
+**Stack:** `HTML` · `CSS` · `JavaScript` · `SVG`
+
+[![Ver en CodePen](https://img.shields.io/badge/Ver_Demo-bb9af7?style=flat-square&logo=codepen)](https://codepen.io/HectorDanielAyarachiFuentes)
+
+</div>
+</td>
+
+</tr>
+</table>
+
+---
+
+<!-- ══════════════════════════════════════════ -->
+<!--             GITHUB METRICS                -->
+<!-- ══════════════════════════════════════════ -->
+
+## 📊 Métricas de Desarrollo
 
 <div align="center">
-  <img src="CARD/stats-card.svg" alt="Estadísticas Generales"/>
+  <img src="CARD/stats-card.svg" alt="Estadísticas" height="210"/>
   &nbsp;&nbsp;
-  <img src="CARD/langs-card.svg" alt="Lenguajes Principales"/>
+  <img src="CARD/langs-card.svg" alt="Top Lenguajes" height="210"/>
 </div>
 
 <br/>
 
-## 🐍 Actividad y Contribuciones
+<div align="center">
+  <img src="CARD/streak.svg" alt="Streak" width="600"/>
+</div>
+
+---
+
+<!-- ══════════════════════════════════════════ -->
+<!--        CONTRIBUTION ACTIVITY              -->
+<!-- ══════════════════════════════════════════ -->
+
+## 🐍 Actividad — Contribution Snake
 
 <div align="center">
-  <h3>Gráfico de Contribuciones (Snake)</h3>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/output/github-contribution-grid-snake.svg" width="100%">
+    <img alt="Snake animation" src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/output/github-contribution-grid-snake.svg" width="100%"/>
   </picture>
-  
-  <br/><br/>
-  
-  <h3>Contribuciones en 3D</h3>
-  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green-animate.svg" alt="Gráfico 3D de Contribuciones" width="80%"/>
 </div>
 
-<br/>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green-animate.svg" alt="3D Contributions" width="80%"/>
+</div>
 
-## 🐾 Mi Fiel Compañera: Dulce Reina 🐾
+---
 
-<p align="center"><i>La verdadera MVP (Most Valuable Puppy) detrás de cada línea de código.</i></p>
+<!-- ══════════════════════════════════════════ -->
+<!--              DULCE REINA                  -->
+<!-- ══════════════════════════════════════════ -->
+
+## 🐾 Mi MVP: Dulce Reina 🏆
+
+<p align="center">
+  <i>La verdadera inspectora de calidad de código. Sin ella, ningún proyecto llega a producción.</i>
+</p>
 
 <div align="center">
-  <table border="0" style="border-collapse: collapse; border: none; background: transparent;">
-    <tr style="background-color: transparent;">
-      <td style="padding: 10px; border: none;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%203.jpg" alt="Dulce Reina" width="220" style="border-radius: 12px;"/>
+  <table border="0" style="border-collapse: collapse; background: transparent;">
+    <tr style="background: transparent;">
+      <td style="padding: 8px; border: none;">
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%203.jpg" alt="Dulce Reina" width="210" style="border-radius: 12px;"/>
       </td>
-      <td style="padding: 10px; border: none;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%202.jpg" alt="Dulce Reina" width="220" style="border-radius: 12px;"/>
+      <td style="padding: 8px; border: none;">
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%202.jpg" alt="Dulce Reina" width="210" style="border-radius: 12px;"/>
       </td>
-      <td style="padding: 10px; border: none;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%201.jpg" alt="Dulce Reina" width="220" style="border-radius: 12px;"/>
+      <td style="padding: 8px; border: none;">
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%201.jpg" alt="Dulce Reina" width="210" style="border-radius: 12px;"/>
       </td>
     </tr>
   </table>
@@ -103,8 +231,29 @@ Soy un desarrollador con un gran interés en construir soluciones tecnológicas 
 
 ---
 
+<!-- ══════════════════════════════════════════ -->
+<!--                FOOTER                     -->
+<!-- ══════════════════════════════════════════ -->
+
 <div align="center">
-  <a href="https://github.com/HectorDanielAyarachiFuentes">
-    <img src="https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Vistas%20del%20Perfil&color=7b61ff&style=for-the-badge" alt="Contador de Visitas"/>
-  </a>
+
+### 📬 ¿Hablamos?
+
+¿Tienes un proyecto interesante, una idea loca o simplemente quieres conectar?  
+**¡No dudes en escribirme!** Siempre estoy abierto a nuevas conversaciones.
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-100000?style=for-the-badge&logo=github)](https://github.com/HectorDanielAyarachiFuentes)&nbsp;
+[![CodePen](https://img.shields.io/badge/CodePen-Follow-000000?style=for-the-badge&logo=codepen)](https://codepen.io/HectorDanielAyarachiFuentes)&nbsp;
+[![Email](https://img.shields.io/badge/Email-Escríbeme-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mp4o@hotmail.com)
+
+<br/>
+
+![Visits](https://komarev.com/ghpvc/?username=HectorDanielAyarachiFuentes&label=Visitas%20al%20Perfil&color=7b61ff&style=for-the-badge)
+
+<br/>
+
+*Made with ❤️ · Neuquen-Patagonia-Argentina · 2026*
+
 </div>

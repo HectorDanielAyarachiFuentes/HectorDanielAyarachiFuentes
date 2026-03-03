@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="55" viewBox="0 0 600 55">
+  <style>
+    .phrase {
+      font-family: 'Segoe UI', Ubuntu, monospace, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      opacity: 0;
+      animation: cycle 15s infinite;
+    }
+    .p1 { fill: #7aa2f7; animation-delay: 0s;  }
+    .p2 { fill: #bb9af7; animation-delay: 5s;  }
+    .p3 { fill: #9ece6a; animation-delay: 10s; }
+    @keyframes cycle {
+      0%            { opacity: 0; }
+      5%            { opacity: 1; }
+      30%           { opacity: 1; }
+      35%           { opacity: 0; }
+      100%          { opacity: 0; }
+    }
+    .cursor {
+      fill: #7aa2f7;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Background: transparent -->
+  <rect width="600" height="55" fill="none"/>
+
+  <!-- Phrase 1 -->
+  <text class="phrase p1" x="300" y="36" text-anchor="middle">
+    🚀 Construyendo el futuro digital, línea a línea...
+  </text>
+
+  <!-- Phrase 2 -->
+  <text class="phrase p2" x="300" y="36" text-anchor="middle">
+    💡 Apasionado por la IA, el diseño y la innovación
+  </text>
+
+  <!-- Phrase 3 -->
+  <text class="phrase p3" x="300" y="36" text-anchor="middle">
+    🌱 Siempre aprendiendo · Siempre creciendo · 2026
+  </text>
+</svg>

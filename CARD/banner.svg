@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b27"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7aa2f7"/>
+      <stop offset="50%" stop-color="#bb9af7"/>
+      <stop offset="100%" stop-color="#7dcfff"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7aa2f7"/>
+      <stop offset="70%" stop-color="#bb9af7"/>
+      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigBlur">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+    <filter id="smallBlur">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="250" fill="url(#bgGrad)"/>
+
+  <!-- Background glow blobs -->
+  <circle cx="780" cy="70" r="130" fill="#7aa2f7" opacity="0.10" filter="url(#bigBlur)">
+    <animate attributeName="opacity" values="0.07;0.15;0.07" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="210" r="100" fill="#bb9af7" opacity="0.08" filter="url(#bigBlur)">
+    <animate attributeName="opacity" values="0.05;0.13;0.05" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="250" r="80" fill="#7dcfff" opacity="0.04" filter="url(#bigBlur)"/>
+
+  <!-- Top & Bottom borders -->
+  <rect x="0" y="0"   width="900" height="2" fill="url(#lineGrad)" opacity="0.9"/>
+  <rect x="0" y="248" width="900" height="2" fill="url(#lineGrad)" opacity="0.9"/>
+
+  <!-- Dot grid decoration (right area) -->
+  <g opacity="0.25">
+    <circle cx="600" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="625" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="650" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="675" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="700" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="725" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="750" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="775" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="800" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="825" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="850" cy="28" r="1.5" fill="#7aa2f7"/> <circle cx="875" cy="28" r="1.5" fill="#7aa2f7"/>
+    <circle cx="600" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="625" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="650" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="675" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="700" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="725" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="750" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="775" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="800" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="825" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="850" cy="53" r="1.5" fill="#bb9af7"/> <circle cx="875" cy="53" r="1.5" fill="#bb9af7"/>
+    <circle cx="600" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="625" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="650" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="675" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="700" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="725" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="750" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="775" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="800" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="825" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="850" cy="78" r="1.5" fill="#7dcfff"/> <circle cx="875" cy="78" r="1.5" fill="#7dcfff"/>
+    <circle cx="600" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="625" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="650" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="675" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="700" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="725" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="750" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="775" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="800" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="825" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="850" cy="103" r="1.5" fill="#9ece6a"/> <circle cx="875" cy="103" r="1.5" fill="#9ece6a"/>
+    <circle cx="600" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="625" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="650" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="675" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="700" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="725" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="750" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="775" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="800" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="825" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="850" cy="128" r="1.5" fill="#ff9e64"/> <circle cx="875" cy="128" r="1.5" fill="#ff9e64"/>
+    <circle cx="600" cy="153" r="1.5" fill="#f7768e"/> <circle cx="625" cy="153" r="1.5" fill="#f7768e"/> <circle cx="650" cy="153" r="1.5" fill="#f7768e"/> <circle cx="675" cy="153" r="1.5" fill="#f7768e"/> <circle cx="700" cy="153" r="1.5" fill="#f7768e"/> <circle cx="725" cy="153" r="1.5" fill="#f7768e"/> <circle cx="750" cy="153" r="1.5" fill="#f7768e"/> <circle cx="775" cy="153" r="1.5" fill="#f7768e"/> <circle cx="800" cy="153" r="1.5" fill="#f7768e"/> <circle cx="825" cy="153" r="1.5" fill="#f7768e"/> <circle cx="850" cy="153" r="1.5" fill="#f7768e"/> <circle cx="875" cy="153" r="1.5" fill="#f7768e"/>
+    <circle cx="600" cy="178" r="1.5" fill="#e0af68"/> <circle cx="625" cy="178" r="1.5" fill="#e0af68"/> <circle cx="650" cy="178" r="1.5" fill="#e0af68"/> <circle cx="675" cy="178" r="1.5" fill="#e0af68"/> <circle cx="700" cy="178" r="1.5" fill="#e0af68"/> <circle cx="725" cy="178" r="1.5" fill="#e0af68"/> <circle cx="750" cy="178" r="1.5" fill="#e0af68"/> <circle cx="775" cy="178" r="1.5" fill="#e0af68"/> <circle cx="800" cy="178" r="1.5" fill="#e0af68"/> <circle cx="825" cy="178" r="1.5" fill="#e0af68"/> <circle cx="850" cy="178" r="1.5" fill="#e0af68"/> <circle cx="875" cy="178" r="1.5" fill="#e0af68"/>
+    <circle cx="600" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="625" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="650" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="675" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="700" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="725" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="750" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="775" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="800" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="825" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="850" cy="203" r="1.5" fill="#7aa2f7"/> <circle cx="875" cy="203" r="1.5" fill="#7aa2f7"/>
+    <circle cx="600" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="625" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="650" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="675" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="700" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="725" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="750" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="775" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="800" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="825" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="850" cy="228" r="1.5" fill="#bb9af7"/> <circle cx="875" cy="228" r="1.5" fill="#bb9af7"/>
+  </g>
+
+  <!-- Orbit rings (right area, between grid and text) -->
+  <g transform="translate(570, 125)">
+    <circle cx="0" cy="0" r="85" fill="none" stroke="#7aa2f7" stroke-width="0.6" stroke-opacity="0.25" stroke-dasharray="5,10">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="25s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="58" fill="none" stroke="#bb9af7" stroke-width="0.6" stroke-opacity="0.25">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#7dcfff" stroke-width="0.6" stroke-opacity="0.30" stroke-dasharray="3,6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Center -->
+    <circle cx="0" cy="0" r="5" fill="#7aa2f7" opacity="0.9" filter="url(#smallBlur)">
+      <animate attributeName="r" values="4;7;4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="2.5" fill="#c0caf5"/>
+    <!-- Orbiting dots -->
+    <g>
+      <circle cx="85" cy="0" r="3.5" fill="#bb9af7" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="25s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="0" cy="-58" r="3" fill="#7dcfff" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="90" to="450" dur="18s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- LEFT TEXT CONTENT -->
+  <!-- Code tag greeting -->
+  <text x="50" y="62" font-family="'Courier New', monospace" font-size="14" fill="#9ece6a" letter-spacing="1">&lt;dev&gt; ¡Hola, Mundo! &lt;/dev&gt;</text>
+
+  <!-- Main Name line 1 -->
+  <text x="50" y="118" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="46" font-weight="700" fill="url(#nameGrad)" filter="url(#glow)">Hector Daniel</text>
+  <!-- Main Name line 2 -->
+  <text x="50" y="162" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="36" font-weight="600" fill="url(#nameGrad)">Ayarachi Fuentes</text>
+
+  <!-- Divider line -->
+  <rect x="50" y="173" width="430" height="1.5" fill="url(#lineGrad)" rx="1"/>
+
+  <!-- Subtitle -->
+  <text x="50" y="198" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="14" fill="#a9b1d6" letter-spacing="2.5">SOFTWARE DEVELOPER  ·  AI &amp; WEB ENTHUSIAST  ·  2026</text>
+
+  <!-- Skill tags/pills -->
+  <g transform="translate(50, 213)">
+    <rect rx="11" width="88" height="24" fill="#7aa2f7" fill-opacity="0.18" stroke="#7aa2f7" stroke-width="1" stroke-opacity="0.7"/>
+    <text x="44" y="16.5" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#7aa2f7">🌐 Full Stack</text>
+  </g>
+  <g transform="translate(148, 213)">
+    <rect rx="11" width="75" height="24" fill="#bb9af7" fill-opacity="0.18" stroke="#bb9af7" stroke-width="1" stroke-opacity="0.7"/>
+    <text x="37" y="16.5" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#bb9af7">🤖 IA / ML</text>
+  </g>
+  <g transform="translate(233, 213)">
+    <rect rx="11" width="108" height="24" fill="#9ece6a" fill-opacity="0.15" stroke="#9ece6a" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="54" y="16.5" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#9ece6a">📂 Open Source</text>
+  </g>
+</svg>
