@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190">
+  <defs>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0614"/>
+      <stop offset="50%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="titleG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9e64"/>
+      <stop offset="40%" stop-color="#f7768e"/>
+      <stop offset="80%" stop-color="#bb9af7"/>
+      <stop offset="100%" stop-color="#7dcfff"/>
+    </linearGradient>
+    <linearGradient id="borderG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f7768e" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#f7768e"/>
+      <stop offset="70%" stop-color="#bb9af7"/>
+      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="heartGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigBlur"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="190" fill="url(#bgG)"/>
+
+  <!-- Background nebula blobs -->
+  <ellipse cx="200" cy="95" rx="180" ry="100" fill="#f7768e" opacity="0.04" filter="url(#bigBlur)">
+    <animate attributeName="opacity" values="0.03;0.07;0.03" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="700" cy="95" rx="200" ry="110" fill="#bb9af7" opacity="0.05" filter="url(#bigBlur)">
+    <animate attributeName="opacity" values="0.04;0.09;0.04" dur="8s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="450" cy="180" rx="150" ry="80" fill="#7dcfff" opacity="0.03" filter="url(#bigBlur)"/>
+
+  <!-- Top & Bottom border lines -->
+  <rect x="0" y="0"   width="900" height="2" fill="url(#borderG)" opacity="0.9"/>
+  <rect x="0" y="188" width="900" height="2" fill="url(#borderG)" opacity="0.9"/>
+
+  <!-- ✨ Twinkling Stars -->
+  <!-- Left cluster -->
+  <circle cx="30"  cy="18"  r="1.2" fill="white" opacity="0.9" filter="url(#starGlow)"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.1s" repeatCount="indefinite"/></circle>
+  <circle cx="68"  cy="42"  r="1.0" fill="white"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="1.8s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <circle cx="45"  cy="75"  r="1.5" fill="#ffe0b2" filter="url(#starGlow)"><animate attributeName="opacity" values="1;0.3;1" dur="2.5s" begin="0.8s" repeatCount="indefinite"/></circle>
+  <circle cx="100" cy="22"  r="1.0" fill="white"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.6s" begin="0.5s" repeatCount="indefinite"/></circle>
+  <circle cx="130" cy="65"  r="1.3" fill="#fce4ec"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></circle>
+  <circle cx="18"  cy="140" r="1.0" fill="white"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.0s" begin="0.2s" repeatCount="indefinite"/></circle>
+  <circle cx="80"  cy="155" r="1.4" fill="#ffe0b2"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.7s" begin="0.9s" repeatCount="indefinite"/></circle>
+  <circle cx="55"  cy="170" r="1.0" fill="white"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="1.9s" begin="1.4s" repeatCount="indefinite"/></circle>
+  <!-- Middle-left -->
+  <circle cx="200" cy="14"  r="1.2" fill="white"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.3s" begin="0.6s" repeatCount="indefinite"/></circle>
+  <circle cx="240" cy="50"  r="1.5" fill="#fce4ec" filter="url(#starGlow)"><animate attributeName="opacity" values="1;0.3;1" dur="1.7s" begin="0.1s" repeatCount="indefinite"/></circle>
+  <circle cx="170" cy="90"  r="1.0" fill="white"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="2.9s" begin="1.2s" repeatCount="indefinite"/></circle>
+  <circle cx="220" cy="170" r="1.3" fill="white"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.0s" begin="0.7s" repeatCount="indefinite"/></circle>
+  <!-- Middle -->
+  <circle cx="380" cy="12"  r="1.0" fill="white"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="2.4s" begin="0.4s" repeatCount="indefinite"/></circle>
+  <circle cx="420" cy="28"  r="1.5" fill="#ffe0b2" filter="url(#starGlow)"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" begin="1.0s" repeatCount="indefinite"/></circle>
+  <circle cx="360" cy="165" r="1.2" fill="white"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.8s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <circle cx="440" cy="175" r="1.0" fill="#fce4ec"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.1s" begin="1.3s" repeatCount="indefinite"/></circle>
+  <!-- Middle-right -->
+  <circle cx="570" cy="20"  r="1.3" fill="white"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.9s" begin="0.5s" repeatCount="indefinite"/></circle>
+  <circle cx="610" cy="55"  r="1.5" fill="#fce4ec" filter="url(#starGlow)"><animate attributeName="opacity" values="1;0.2;1" dur="2.6s" begin="0.8s" repeatCount="indefinite"/></circle>
+  <circle cx="550" cy="170" r="1.0" fill="white"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></circle>
+  <circle cx="640" cy="160" r="1.2" fill="white"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.1s" begin="0.2s" repeatCount="indefinite"/></circle>
+  <!-- Right cluster -->
+  <circle cx="730" cy="18"  r="1.3" fill="white"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.0s" begin="0.6s" repeatCount="indefinite"/></circle>
+  <circle cx="770" cy="45"  r="1.0" fill="#ffe0b2"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="1.7s" begin="1.4s" repeatCount="indefinite"/></circle>
+  <circle cx="810" cy="22"  r="1.5" fill="white" filter="url(#starGlow)"><animate attributeName="opacity" values="1;0.3;1" dur="2.3s" begin="0.1s" repeatCount="indefinite"/></circle>
+  <circle cx="860" cy="60"  r="1.2" fill="#fce4ec"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.8s" begin="0.9s" repeatCount="indefinite"/></circle>
+  <circle cx="880" cy="140" r="1.0" fill="white"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="1.6s" begin="0.4s" repeatCount="indefinite"/></circle>
+  <circle cx="840" cy="170" r="1.3" fill="white"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.5s" begin="1.2s" repeatCount="indefinite"/></circle>
+  <circle cx="750" cy="165" r="1.0" fill="#ffe0b2"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="2.1s" begin="0.7s" repeatCount="indefinite"/></circle>
+
+  <!-- 💫 Sparkle crosses (4-pointed star shapes) -->
+  <g transform="translate(155, 30)" opacity="0.8" filter="url(#starGlow)">
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#fce4ec" stroke-width="1.5"><animate attributeName="opacity" values="0;1;0" dur="3s" begin="0.5s" repeatCount="indefinite"/></line>
+    <line x1="-6" y1="0" x2="6" y2="0" stroke="#fce4ec" stroke-width="1.5"><animate attributeName="opacity" values="0;1;0" dur="3s" begin="0.5s" repeatCount="indefinite"/></line>
+  </g>
+  <g transform="translate(500, 15)" opacity="0.8" filter="url(#starGlow)">
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#ffe0b2" stroke-width="1.5"><animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="1.2s" repeatCount="indefinite"/></line>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="#ffe0b2" stroke-width="1.5"><animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="1.2s" repeatCount="indefinite"/></line>
+  </g>
+  <g transform="translate(690, 175)" opacity="0.8" filter="url(#starGlow)">
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#fce4ec" stroke-width="1.5"><animate attributeName="opacity" values="0;1;0" dur="3.2s" begin="0.3s" repeatCount="indefinite"/></line>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="#fce4ec" stroke-width="1.5"><animate attributeName="opacity" values="0;1;0" dur="3.2s" begin="0.3s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- ♥ Floating hearts left -->
+  <text x="22" y="108" font-size="18" fill="#f7768e" opacity="0.7" filter="url(#heartGlow)">♥
+    <animate attributeName="y" values="108;95;108" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite"/>
+  </text>
+  <text x="145" y="130" font-size="12" fill="#bb9af7" opacity="0.6" filter="url(#heartGlow)">♥
+    <animate attributeName="y" values="130;120;130" dur="5s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="5s" begin="1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- ♥ Floating hearts right -->
+  <text x="855" y="105" font-size="18" fill="#f7768e" opacity="0.7" filter="url(#heartGlow)">♥
+    <animate attributeName="y" values="105;93;105" dur="4s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" begin="2s" repeatCount="indefinite"/>
+  </text>
+  <text x="760" y="120" font-size="12" fill="#ff9e64" opacity="0.6" filter="url(#heartGlow)">♥
+    <animate attributeName="y" values="120;112;120" dur="5.5s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="5.5s" begin="0.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- 🐾 Paw print LEFT (decorative circles) -->
+  <g transform="translate(42, 58)" opacity="0.55">
+    <!-- Main pad -->
+    <ellipse cx="0" cy="18" rx="14" ry="11" fill="#f7768e"/>
+    <!-- Toes -->
+    <circle cx="-11" cy="6"  r="5.5" fill="#f7768e"/>
+    <circle cx="-3"  cy="2"  r="5.5" fill="#f7768e"/>
+    <circle cx="6"   cy="2"  r="5.5" fill="#f7768e"/>
+    <circle cx="13"  cy="7"  r="5.5" fill="#f7768e"/>
+  </g>
+
+  <!-- 🐾 Paw print RIGHT (decorative circles) -->
+  <g transform="translate(830, 80)" opacity="0.55">
+    <ellipse cx="0" cy="18" rx="13" ry="10" fill="#bb9af7"/>
+    <circle cx="-10" cy="6"  r="5" fill="#bb9af7"/>
+    <circle cx="-3"  cy="2"  r="5" fill="#bb9af7"/>
+    <circle cx="5"   cy="2"  r="5" fill="#bb9af7"/>
+    <circle cx="12"  cy="7"  r="5" fill="#bb9af7"/>
+  </g>
+
+  <!-- ═══════ CENTRAL TITLE ═══════ -->
+  <!-- Glow shadow behind title -->
+  <text x="450" y="96" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="46" font-weight="800" fill="#f7768e" opacity="0.15" filter="url(#bigBlur)">🐾 Dulce Reina 🐾</text>
+
+  <!-- Title with gradient -->
+  <text x="450" y="96" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="46" font-weight="800" fill="url(#titleG)" filter="url(#glow)">🐾 Dulce Reina 🐾</text>
+
+  <!-- Crown / subtitle -->
+  <text x="450" y="132" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="16" fill="#c0caf5" letter-spacing="3">M V P  —  M O S T  V A L U A B L E  P U P P Y</text>
+
+  <!-- Bottom caption -->
+  <text x="450" y="162" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="13" fill="#a9b1d6" font-style="italic">La verdadera inspectora de calidad de código de Neuquén-Patagonia ✨</text>
+</svg>

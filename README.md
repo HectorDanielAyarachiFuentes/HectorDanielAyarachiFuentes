@@ -207,27 +207,31 @@ Dashboard interactivo con widgets dinámicos, modo oscuro, notas sticky, reloj y
 <!--              DULCE REINA                  -->
 <!-- ══════════════════════════════════════════ -->
 
-## 🐾 Mi MVP: Dulce Reina 🏆
+<div align="center">
+  <img src="CARD/dulce-banner.svg" width="100%" alt="Dulce Reina Banner"/>
+</div>
 
-<p align="center">
-  <i>La verdadera inspectora de calidad de código. Sin ella, ningún proyecto llega a producción.</i>
-</p>
+<br/>
 
 <div align="center">
   <table border="0" style="border-collapse: collapse; background: transparent;">
     <tr style="background: transparent;">
-      <td style="padding: 8px; border: none;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%203.jpg" alt="Dulce Reina" width="210" style="border-radius: 12px;"/>
+      <td style="padding: 10px; border: none; vertical-align: top;">
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%203.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #f7768e;"/>
+        <br/><sub><b>👑 La Reina</b></sub>
       </td>
-      <td style="padding: 8px; border: none;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%202.jpg" alt="Dulce Reina" width="210" style="border-radius: 12px;"/>
+      <td style="padding: 10px; border: none; vertical-align: top;">
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%202.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #bb9af7;"/>
+        <br/><sub><b>💜 La Experta</b></sub>
       </td>
-      <td style="padding: 8px; border: none;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%201.jpg" alt="Dulce Reina" width="210" style="border-radius: 12px;"/>
+      <td style="padding: 10px; border: none; vertical-align: top;">
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%201.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #7aa2f7;"/>
+        <br/><sub><b>⭐ La MVP</b></sub>
       </td>
     </tr>
   </table>
 </div>
+
 
 ---
 
