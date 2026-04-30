@@ -121,9 +121,17 @@ Dashboard interactivo con widgets dinámicos, modo oscuro, notas sticky, reloj y
 <br/>
 
 <div align="center">
-  <h3>🌎 Comunidad Global de Seguidores</h3>
-  <img src="CARD/followers-map.svg" alt="Mapa de Seguidores" width="100%"/>
-  <p><i>Ubicación geográfica de los desarrolladores que siguen mi trabajo.</i></p>
+  <h3>🌍 Comunidad Global y Stack Tecnológico</h3>
+
+<p align="center">
+  <a href="https://info.flagcounter.com/hRps">
+    <img src="https://s11.flagcounter.com/map/hRps/size_l/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="Flag Counter" border="0">
+  </a>
+</p>
+
+  <img src="CARD/followers-map.svg" alt="Comunidad y Stack" width="100%"/>
+
+<i>Ubicación geográfica y comunidad de desarrolladores que siguen mi trabajo.</i>
 </div>
 
 ---
