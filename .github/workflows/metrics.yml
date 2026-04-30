@@ -1,0 +1,33 @@
+name: Metrics
+on:
+  schedule:
+    - cron: "0 0 * * *" # Se actualiza cada 24 horas
+  workflow_dispatch:
+  push:
+    branches: ["main", "master"]
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # Token con permisos 'read:user' y 'repo'
+          token: ${{ secrets.METRICS_TOKEN }}
+          
+          # Configuración básica
+          user: HectorDanielAyarachiFuentes
+          template: classic
+          base: "" # No mostramos métricas base, solo el mapa
+          
+          # Plugin Worldmap
+          plugin_worldmap: yes
+          plugin_worldmap_type: followers
+          plugin_worldmap_user: HectorDanielAyarachiFuentes
+          
+          # Estética y Salida
+          config_timezone: America/Argentina/Buenos_Aires
+          base_theme: tokyonight
+          filename: CARD/followers-map.svg

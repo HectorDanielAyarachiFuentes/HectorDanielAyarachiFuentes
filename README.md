@@ -118,7 +118,16 @@ Dashboard interactivo con widgets dinámicos, modo oscuro, notas sticky, reloj y
   <img src="CARD/streak.svg" alt="Streak" width="600"/>
 </div>
 
+<br/>
+
+<div align="center">
+  <h3>🌎 Comunidad Global de Seguidores</h3>
+  <img src="CARD/followers-map.svg" alt="Mapa de Seguidores" width="100%"/>
+  <p><i>Ubicación geográfica de los desarrolladores que siguen mi trabajo.</i></p>
+</div>
+
 ---
+
 
 <!-- ══════════════════════════════════════════ -->
 <!--        CONTRIBUTION ACTIVITY              -->
