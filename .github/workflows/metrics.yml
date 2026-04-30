@@ -19,13 +19,14 @@ jobs:
           
           # Configuración básica
           user: HectorDanielAyarachiFuentes
-          template: classic
-          base: header # Añadimos el encabezado para dar estructura
+          template: repository # Probamos con este template que es muy robusto
+          base: header
           
           # Plugin Worldmap
           plugin_worldmap: yes
-          plugin_worldmap_token: ${{ secrets.METRICS_TOKEN }} # Token explícito para el plugin
+          plugin_worldmap_token: ${{ secrets.METRICS_TOKEN }}
           plugin_worldmap_type: followers
+          plugin_worldmap_limit: 1000
           
           # Estética y Salida
           config_timezone: America/Argentina/Buenos_Aires
