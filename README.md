@@ -118,17 +118,17 @@ const Developer = {
 <table align="center" style="border: none;">
   <tr>
     <td align="center" width="33%">
-      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%203.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #f7768e; border: 3px solid #f7768e;"/>
+      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/assets/images/Dulce%203.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #f7768e; border: 3px solid #f7768e;"/>
       <br/><br/>
       <kbd>&nbsp;👑 Lead QA&nbsp;</kbd>
     </td>
     <td align="center" width="33%">
-      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%202.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #bb9af7; border: 3px solid #bb9af7;"/>
+      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/assets/images/Dulce%202.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #bb9af7; border: 3px solid #bb9af7;"/>
       <br/><br/>
       <kbd>&nbsp;💜 Bug Hunter&nbsp;</kbd>
     </td>
     <td align="center" width="33%">
-      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%201.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #7aa2f7; border: 3px solid #7aa2f7;"/>
+      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/assets/images/Dulce%201.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #7aa2f7; border: 3px solid #7aa2f7;"/>
       <br/><br/>
       <kbd>&nbsp;⭐ MVP&nbsp;</kbd>
     </td>
