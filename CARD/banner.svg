@@ -3,6 +3,7 @@
     <!-- Modern subtle grid pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="40 40" dur="6s" repeatCount="indefinite"/>
     </pattern>
     
     <!-- Soft glow for chart line -->
@@ -42,20 +43,31 @@
   <!-- Right Side: Professional Data Visualization -->
   <g transform="translate(500, 45)">
     <!-- Chart Area Fill -->
-    <path d="M 0 120 C 50 120, 80 60, 120 80 C 160 100, 200 30, 250 50 C 300 70, 330 20, 350 10 L 350 160 L 0 160 Z" fill="url(#chartFade)"/>
+    <path d="M 0 120 C 50 120, 80 60, 120 80 C 160 100, 200 30, 250 50 C 300 70, 330 20, 350 10 L 350 160 L 0 160 Z" fill="url(#chartFade)">
+      <animate attributeName="d" values="M 0 120 C 50 120, 80 60, 120 80 C 160 100, 200 30, 250 50 C 300 70, 330 20, 350 10 L 350 160 L 0 160 Z; M 0 125 C 50 125, 80 70, 120 90 C 160 110, 200 40, 250 60 C 300 80, 330 30, 350 20 L 350 160 L 0 160 Z; M 0 120 C 50 120, 80 60, 120 80 C 160 100, 200 30, 250 50 C 300 70, 330 20, 350 10 L 350 160 L 0 160 Z" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" keyTimes="0; 0.5; 1" />
+    </path>
     <!-- Chart Spline -->
-    <path d="M 0 120 C 50 120, 80 60, 120 80 C 160 100, 200 30, 250 50 C 300 70, 330 20, 350 10" fill="none" stroke="url(#lineGlow)" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M 0 120 C 50 120, 80 60, 120 80 C 160 100, 200 30, 250 50 C 300 70, 330 20, 350 10" fill="none" stroke="url(#lineGlow)" stroke-width="2.5" filter="url(#glow)">
+      <animate attributeName="d" values="M 0 120 C 50 120, 80 60, 120 80 C 160 100, 200 30, 250 50 C 300 70, 330 20, 350 10; M 0 125 C 50 125, 80 70, 120 90 C 160 110, 200 40, 250 60 C 300 80, 330 30, 350 20; M 0 120 C 50 120, 80 60, 120 80 C 160 100, 200 30, 250 50 C 300 70, 330 20, 350 10" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" keyTimes="0; 0.5; 1" />
+    </path>
     
     <!-- Data points -->
-    <circle cx="120" cy="80" r="4.5" fill="#050505" stroke="#8b5cf6" stroke-width="2"/>
-    <circle cx="250" cy="50" r="4.5" fill="#050505" stroke="#d946ef" stroke-width="2"/>
+    <circle cx="120" cy="80" r="4.5" fill="#050505" stroke="#8b5cf6" stroke-width="2">
+      <animate attributeName="cy" values="80;90;80" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" keyTimes="0; 0.5; 1" />
+    </circle>
+    <circle cx="250" cy="50" r="4.5" fill="#050505" stroke="#d946ef" stroke-width="2">
+      <animate attributeName="cy" values="50;60;50" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" keyTimes="0; 0.5; 1" />
+    </circle>
     
     <!-- Pulsing target point -->
     <circle cx="350" cy="10" r="6" fill="#ec4899" opacity="0.3">
+      <animate attributeName="cy" values="10;20;10" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" keyTimes="0; 0.5; 1" />
       <animate attributeName="r" values="4;10;4" dur="2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="350" cy="10" r="4.5" fill="#050505" stroke="#ec4899" stroke-width="2"/>
+    <circle cx="350" cy="10" r="4.5" fill="#050505" stroke="#ec4899" stroke-width="2">
+      <animate attributeName="cy" values="10;20;10" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" keyTimes="0; 0.5; 1" />
+    </circle>
   </g>
 
   <!-- Left Side: Clean Typography -->
