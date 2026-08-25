@@ -152,7 +152,7 @@ Dashboard interactivo con widgets dinámicos, modo oscuro, notas sticky, reloj y
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-green-animate.svg" alt="3D Contributions" width="80%"/>
+  <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contributions" width="80%"/>
 </div>
 
 ---

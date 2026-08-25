@@ -35,5 +35,4 @@ jobs:
           
           # Estética y Salida
           config_timezone: America/Argentina/Buenos_Aires
-          base_theme: tokyonight
           filename: CARD/followers-map.svg
