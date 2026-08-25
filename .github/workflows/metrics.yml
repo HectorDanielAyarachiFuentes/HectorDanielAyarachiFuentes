@@ -15,7 +15,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           # Token con permisos 'read:user' y 'repo'
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           
           # Configuración básica
           user: HectorDanielAyarachiFuentes
