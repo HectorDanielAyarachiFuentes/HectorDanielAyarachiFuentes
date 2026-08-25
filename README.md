@@ -171,15 +171,15 @@ Dashboard interactivo con widgets dinámicos, modo oscuro, notas sticky, reloj y
   <table border="0" style="border-collapse: collapse; background: transparent;">
     <tr style="background: transparent;">
       <td style="padding: 10px; border: none; vertical-align: top;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%203.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #f7768e;"/>
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/assets/images/Dulce%203.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #f7768e;"/>
         <br/><sub><b>👑 La Reina</b></sub>
       </td>
       <td style="padding: 10px; border: none; vertical-align: top;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%202.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #bb9af7;"/>
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/assets/images/Dulce%202.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #bb9af7;"/>
         <br/><sub><b>💜 La Experta</b></sub>
       </td>
       <td style="padding: 10px; border: none; vertical-align: top;">
-        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%201.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #7aa2f7;"/>
+        <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/assets/images/Dulce%201.jpg" alt="🐾 Dulce Reina" width="220" style="border-radius: 16px; border: 2px solid #7aa2f7;"/>
         <br/><sub><b>⭐ La MVP</b></sub>
       </td>
     </tr>
