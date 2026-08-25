@@ -71,10 +71,10 @@ const Developer = {
 
 ### 📈 `system_metrics.sh`
 
-<details open>
-  <summary><b>▸ 📊 Dashboard de Rendimiento (CPU/Commits)</b></summary>
-  <br/>
-  <div align="center">
+<br/>
+<b>▸ 📊 Dashboard de Rendimiento (CPU/Commits)</b>
+<br/><br/>
+<div align="center">
     <img src="CARD/stats-card.svg" alt="Estadísticas" height="195"/>
     <img src="CARD/langs-card.svg" alt="Top Lenguajes" height="195"/>
     <br/><br/>
@@ -87,13 +87,12 @@ const Developer = {
     </picture>
     <br/><br/>
     <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contributions" width="100%"/>
-  </div>
-</details>
+</div>
 
-<details>
-  <summary><b>▸ 🌍 Análisis de Comunidad (Redes & Seguidores)</b></summary>
-  <br/>
-  <div align="center">
+<br/>
+<b>▸ 🌍 Análisis de Comunidad (Redes & Seguidores)</b>
+<br/><br/>
+<div align="center">
     <a href="https://info.flagcounter.com/hRps">
       <img src="https://s11.flagcounter.com/map/hRps/size_l/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="Flag Counter" border="0">
     </a>
@@ -107,7 +106,9 @@ const Developer = {
 
 ---
 
+
 ### 🐾 `QA_Department/Dulce_Reina`
+
 
 <div align="center">
   <img src="CARD/dulce-banner.svg" width="100%" alt="Dulce Reina Banner"/>
@@ -118,17 +119,17 @@ const Developer = {
 <table align="center" style="border: none;">
   <tr>
     <td align="center" width="33%">
-      <img src="assets/images/Dulce%203.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #f7768e; border: 3px solid #f7768e;"/>
+      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%203.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #f7768e; border: 3px solid #f7768e;"/>
       <br/><br/>
       <kbd>&nbsp;👑 Lead QA&nbsp;</kbd>
     </td>
     <td align="center" width="33%">
-      <img src="assets/images/Dulce%202.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #bb9af7; border: 3px solid #bb9af7;"/>
+      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%202.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #bb9af7; border: 3px solid #bb9af7;"/>
       <br/><br/>
       <kbd>&nbsp;💜 Bug Hunter&nbsp;</kbd>
     </td>
     <td align="center" width="33%">
-      <img src="assets/images/Dulce%201.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #7aa2f7; border: 3px solid #7aa2f7;"/>
+      <img src="https://raw.githubusercontent.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/main/Img/Dulce%201.jpg" width="180" style="border-radius: 50%; box-shadow: 0 0 15px #7aa2f7; border: 3px solid #7aa2f7;"/>
       <br/><br/>
       <kbd>&nbsp;⭐ MVP&nbsp;</kbd>
     </td>
