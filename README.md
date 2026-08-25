@@ -100,7 +100,6 @@ const Developer = {
     <img src="CARD/followers-map.svg" alt="Comunidad y Stack" width="100%"/>
     <p><i>Ubicación geográfica de la comunidad de desarrolladores.</i></p>
   </div>
-</details>
 
 <br/>
 
