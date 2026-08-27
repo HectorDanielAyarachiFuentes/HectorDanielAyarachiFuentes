@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="100%" height="60">
+  <defs>
+    <linearGradient id="gold-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0" />
+      <stop offset="20%" stop-color="#d4af37" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#f3e5ab" stop-opacity="1" />
+      <stop offset="80%" stop-color="#d4af37" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f3e5ab" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="600" cy="30" rx="120" ry="15" fill="url(#center-glow)" />
+
+  <line x1="100" y1="30" x2="1100" y2="30" stroke="url(#gold-line)" stroke-width="0.75" />
+
+  <line x1="250" y1="25" x2="950" y2="25" stroke="url(#gold-line)" stroke-width="0.5" stroke-opacity="0.6" />
+  <line x1="250" y1="35" x2="950" y2="35" stroke="url(#gold-line)" stroke-width="0.5" stroke-opacity="0.6" />
+
+  <path d="M 480 30 Q 520 18 550 30" fill="none" stroke="url(#gold-line)" stroke-width="0.8" />
+  <path d="M 480 30 Q 520 42 550 30" fill="none" stroke="url(#gold-line)" stroke-width="0.8" />
+  <circle cx="480" cy="30" r="1.5" fill="#f3e5ab" />
+  <circle cx="530" cy="30" r="1" fill="#d4af37" />
+
+  <path d="M 720 30 Q 680 18 650 30" fill="none" stroke="url(#gold-line)" stroke-width="0.8" />
+  <path d="M 720 30 Q 680 42 650 30" fill="none" stroke="url(#gold-line)" stroke-width="0.8" />
+  <circle cx="720" cy="30" r="1.5" fill="#f3e5ab" />
+  <circle cx="670" cy="30" r="1" fill="#d4af37" />
+
+  <polygon points="600,16 607,30 600,44 593,30" fill="none" stroke="#f3e5ab" stroke-width="0.8" />
+  <polygon points="600,22 603.5,30 600,38 596.5,30" fill="#f3e5ab" />
+  
+  <circle cx="572" cy="30" r="1.5" fill="#f3e5ab" />
+  <circle cx="628" cy="30" r="1.5" fill="#f3e5ab" />
+</svg>
